@@ -65,6 +65,5 @@ int main(int argc, char **args) {
 		getName(buf, name);
 		gpa = computeGPA(buf);
 		printf("%s|%s|%f\n", regNo, name, gpa);
-		break;
 	}
 }

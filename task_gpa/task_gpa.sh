@@ -7,8 +7,7 @@ then
 	mkdir student_details
 fi
 cd student_details
-curl -fLo "s4d_student_details.txt" "http://14.139.189.212/s4d/s4d.txt" > /dev/null
-grep "CHN" s4d_student_details.txt | awk '{s=""; for (i=3; i<=NF; i++) s=s $i " "; print s }' | sed '/^L.*/d' > s4d_student_registor_number_and_name.txt
+curl -fL "http://14.139.189.212/s4d/s4d.txt" | grep "CHN" | awk '{s=""; for (i=3; i<=NF; i++) s=s $i " "; print s }' | sed '/^L.*/d' > s4d_student_registor_number_and_name.txt
 cd ..
 
 
@@ -20,9 +19,7 @@ fi
 cd s1
 curl -fLo "result.pdf" "https://ktu.edu.in/eu/att/attachments.htm?download=file&id=G9JU3qvNaL1Bbd97S4x8QAIqBvHCL9A4lNbTXzgGtuc%3D" > /dev/null
 pdftotext -nopgbrk result.pdf
-grep --no-group-separator -A3 'CHN17CS' result.txt > result_CS_Only.txt
-tr '\n' ' ' < result_CS_Only.txt > result_no_newline.txt
-sed 's/\ CHN/\nCHN/g' result_no_newline.txt > result_one_per_line.txt
+grep --no-group-separator -A3 'CHN17CS' result.txt | tr '\n' ' ' | sed 's/\ CHN/\nCHN/g' > result_one_per_line.txt
 cd ..
 
 
@@ -34,9 +31,7 @@ fi
 cd s2
 curl -fLo "result.pdf" "https://ktu.edu.in/eu/att/attachments.htm?download=file&id=M0BUnlNAAnhrVifaH56UXPBWJkDw2vvqDcL9YR03Q0s%3D" > /dev/null
 pdftotext -nopgbrk result.pdf
-grep --no-group-separator -A3 'CHN17CS' result.txt > result_CS_Only.txt
-tr '\n' ' ' < result_CS_Only.txt > result_no_newline.txt
-sed 's/\ CHN/\nCHN/g' result_no_newline.txt > result_one_per_line.txt
+grep --no-group-separator -A3 'CHN17CS' result.txt | tr '\n' ' ' | sed 's/\ CHN/\nCHN/g' > result_one_per_line.txt
 cd ..
 
 
