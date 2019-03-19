@@ -1,39 +1,91 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
+int getCredit(char subject[]) {
+	if (!strcmp("MA101", subject)) {
+		return 4;
+	} else if (!strcmp("PH100", subject)) {
+		return 4;
+	} else if (!strcmp("BE100", subject)) {
+		return 4;
+	} else if (!strcmp("BE10105", subject)) {
+		return 3;
+	} else if (!strcmp("BE103", subject)) {
+		return 3;
+	} else if (!strcmp("EE100", subject)) {
+		return 3;
+	} else if (!strcmp("PH110", subject)) {
+		return 1;
+	} else if (!strcmp("EE110", subject)) {
+		return 1;
+	} else if (!strcmp("CS110", subject)) {
+		return 1;
+	} else if (!strcmp("MA102", subject)) {
+		return 4;
+	} else if (!strcmp("CY100", subject)) {
+		return 4;
+	} else if (!strcmp("BE110", subject)) {
+		return 3;
+	} else if (!strcmp("BE102", subject)) {
+		return 3;
+	} else if (!strcmp("CY110", subject)) {
+		return 1;
+	} else if (!strcmp("EC100", subject)) {
+		return 3;
+	} else if (!strcmp("EC110", subject)) {
+		return 1;
+	} else if (!strcmp("CS120", subject)) {
+		return 1;
+	} else if (!strcmp("CS100", subject)) {
+		return 3;
+	} else {
+		printf("Invalid subject : |%s|\n", subject);
+	}
+}
 float computeGPA(char buf[]) {
-	int i, j, count=0;
+	int i, j, k, count=0, credit, totalcredit=0;
 	float total=0;
-	char grade[3];
+	char grade[3], subject[10];
 	for (i=0; buf[i] != '\0'; i++) {
-		if (buf[i] == '(') {
-			j=0;
+		if (buf[i] == ' ' && buf[i+1] != ' ' && buf[i+1] != '\n' && buf[i+1] != '\0') {
+			k=0;
 			i++;
-			count++;
-			while(buf[i] != ')') {
-				grade[j++] = buf[i++];
+			while (buf[i] != '(') {
+				subject[k++] = buf[i++];
 			}
-			grade[j] = '\0';
-			if (!strcmp(grade, "O")) {
-				total += 10;
-			} else if (!strcmp(grade, "A+")) {
-				total += 9;
-			} else if (!strcmp(grade, "A")) {
-				total += 8.5;
-			} else if (!strcmp(grade, "B+")) {
-				total += 8;
-			} else if (!strcmp(grade, "B")) {
-				total += 7;
-			} else if (!strcmp(grade, "C")) {
-				total += 6;
-			} else if (!strcmp(grade, "P")) {
-				total += 5;
-			} else {
-				total += 0;
+			subject[k] = '\0';
+			credit = getCredit(subject);
+			totalcredit += credit;
+			if (buf[i] == '(') {
+				j=0;
+				i++;
+				count++;
+				while(buf[i] != ')') {
+					grade[j++] = buf[i++];
+				}
+				grade[j] = '\0';
+				if (!strcmp(grade, "O")) {
+					total += 10*credit;
+				} else if (!strcmp(grade, "A+")) {
+					total += 9*credit;
+				} else if (!strcmp(grade, "A")) {
+					total += 8.5*credit;
+				} else if (!strcmp(grade, "B+")) {
+					total += 8*credit;
+				} else if (!strcmp(grade, "B")) {
+					total += 7*credit;
+				} else if (!strcmp(grade, "C")) {
+					total += 6*credit;
+				} else if (!strcmp(grade, "P")) {
+					total += 5*credit;
+				} else {
+					total += 0;
+				}
 			}
 		}
 	}
-	return (float)(total/count);
+	return (float)(total/totalcredit);
 }
 void getRegNo(char buf[], char regNo[]) {
 	int i;
@@ -64,6 +116,7 @@ int main(int argc, char **args) {
 		getRegNo(buf, regNo);
 		getName(buf, name);
 		gpa = computeGPA(buf);
-		printf("%s|%s|%f\n", regNo, name, gpa);
+		//printf("%s|%s|%f\n", regNo, name, gpa);
+		printf("%s|%s|%.2f\n", regNo, name, gpa);
 	}
 }
