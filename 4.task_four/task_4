@@ -1,0 +1,52 @@
+Script started on Thursday 28 March 2019 11:03:50 AM IST
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ssh 192.168[K[K[K[K[K[K[Kcs17d36@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d36@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 28 10:45:28 2019 from 192.168.0.224
+$ ls
+cs232  examples.desktop  test
+$ rm test
+rm: cannot remove 'test': Is a directory
+$ rm test -r
+$ touch ab c  c
+$ rm abc
+$ exit
+Connection to 192.168.0.30 closed.
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ls
+abc    [0m[01;34mDesktop[0m    [01;34mDownloads[0m         [01;34mMusic[0m     [01;34mprojects[0m  task_4     [01;34mVideos[0m
+[01;34mcs232[0m  [01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mPublic[0m    [01;34mTemplates[0m
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ t[Krsync -ah --[K[K--info=prot[Kgress2 abc cs17d36@192.168.0. 30:~/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d36@192.168.0.30's password: 
+              0 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=0/1)              0 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=0/1)
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ssh [K[K[K[Krm abc
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ scp cs17d36@192.168.0.30:~/abc ./
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d36@192.168.0.30's password: 
+abc                                           100%    0     0.0KB/s   00:00    
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ls
+abc    [0m[01;34mDesktop[0m    [01;34mDownloads[0m         [01;34mMusic[0m     [01;34mprojects[0m  task_4     [01;34mVideos[0m
+[01;34mcs232[0m  [01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mPublic[0m    [01;34mTemplates[0m
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ exit
+exit
+
+Script done on Thursday 28 March 2019 11:07:56 AM IST
