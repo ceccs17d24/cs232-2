@@ -7,7 +7,7 @@ then
 	mkdir student_details
 fi
 cd student_details
-curl -fL "http://14.139.189.212/s4d/s4d.txt" | grep "CHN" | awk '{s=""; for (i=3; i<=NF; i++) s=s $i " "; print s }' | sed '/^L.*/d' > s4d_student_registor_number_and_name.txt
+curl -fL "http://192.168.0.2/s4d/s4d.txt" | grep "CHN" | awk '{s=""; for (i=3; i<=NF; i++) s=s $i " "; print s }' | sed '/^L.*/d' > s4d_student_registor_number_and_name.txt
 cd ..
 
 

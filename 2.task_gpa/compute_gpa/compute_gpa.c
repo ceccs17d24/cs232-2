@@ -116,7 +116,6 @@ int main(int argc, char **args) {
 		getRegNo(buf, regNo);
 		getName(buf, name);
 		gpa = computeGPA(buf);
-		//printf("%s|%s|%f\n", regNo, name, gpa);
 		printf("%s|%s|%.2f\n", regNo, name, gpa);
 	}
 }

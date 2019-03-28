@@ -1,0 +1,161 @@
+Script started on Thursday 28 March 2019 09:48:36 AM IST
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ sftp csd1[K[K17d36@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d36@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put projects/cs232[1@-p[1@rp[1@ p
+Uploading projects/cs232/ to /home/cs17d36/cs232
+Entering projects/cs232/
+projects/cs232/.gitignore                                                                                       0%    0     0.0KB/s   --:-- ETAprojects/cs232/.gitignore                                                                                     100%   10     0.0KB/s   00:00    
+Entering projects/cs232/1.task_linux_commands
+projects/cs232/1.task_linux_commands/typescript                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/1.task_linux_commands/typescript                                                               100% 7241     7.1KB/s   00:00    
+Entering projects/cs232/5.task_ftp
+Entering projects/cs232/2.task_gpa
+Entering projects/cs232/2.task_gpa/compute_gpa
+projects/cs232/2.task_gpa/compute_gpa/compute_gpa.c                                                             0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/compute_gpa/compute_gpa.c                                                           100% 1364     1.3KB/s   00:00    
+projects/cs232/2.task_gpa/compute_gpa/compute_gpa                                                               0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/compute_gpa/compute_gpa                                                             100% 8825     8.6KB/s   00:00    
+Entering projects/cs232/2.task_gpa/student_details
+projects/cs232/2.task_gpa/student_details/s4d_student_registor_number_and_name.txt                              0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/student_details/s4d_student_registor_number_and_name.txt                            100% 1478     1.4KB/s   00:00    
+Entering projects/cs232/2.task_gpa/s2
+projects/cs232/2.task_gpa/s2/result_one_per_line.txt                                                            0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s2/result_one_per_line.txt                                                          100%   13KB  12.7KB/s   00:00    
+projects/cs232/2.task_gpa/s2/result.txt                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s2/result.txt                                                                       100%   42KB  41.6KB/s   00:00    
+projects/cs232/2.task_gpa/s2/s2_result.txt                                                                      0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s2/s2_result.txt                                                                    100% 1954     1.9KB/s   00:00    
+projects/cs232/2.task_gpa/s2/result.pdf                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s2/result.pdf                                                                       100%   28KB  28.3KB/s   00:00    
+Entering projects/cs232/2.task_gpa/cgpa
+projects/cs232/2.task_gpa/cgpa/s1_s2_with_reg.txt                                                               0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/cgpa/s1_s2_with_reg.txt                                                             100%   24KB  23.7KB/s   00:00    
+projects/cs232/2.task_gpa/cgpa/cgpa.txt                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/cgpa/cgpa.txt                                                                       100% 1942     1.9KB/s   00:00    
+projects/cs232/2.task_gpa/task_gpa_script                                                                       0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/task_gpa_script                                                                     100%   14KB  13.7KB/s   00:00    
+projects/cs232/2.task_gpa/task_gpa.sh                                                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/task_gpa.sh                                                                         100% 1700     1.7KB/s   00:00    
+Entering projects/cs232/2.task_gpa/s1
+projects/cs232/2.task_gpa/s1/result_one_per_line.txt                                                            0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s1/result_one_per_line.txt                                                          100%   12KB  12.5KB/s   00:00    
+projects/cs232/2.task_gpa/s1/result.txt                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s1/result.txt                                                                       100%   36KB  36.5KB/s   00:00    
+projects/cs232/2.task_gpa/s1/s1_result.txt                                                                      0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s1/s1_result.txt                                                                    100% 1954     1.9KB/s   00:00    
+projects/cs232/2.task_gpa/s1/result.pdf                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/2.task_gpa/s1/result.pdf                                                                       100%   24KB  23.8KB/s   00:00    
+Entering projects/cs232/task_gpa
+Entering projects/cs232/task_gpa/compute_gpa
+projects/cs232/task_gpa/compute_gpa/compute_gpa.c                                                               0%    0     0.0KB/s   --:-- ETAprojects/cs232/task_gpa/compute_gpa/compute_gpa.c                                                             100% 2836     2.8KB/s   00:00    
+projects/cs232/task_gpa/compute_gpa/compute_gpa                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/task_gpa/compute_gpa/compute_gpa                                                               100%   17KB  16.5KB/s   00:00    
+Entering projects/cs232/.git
+projects/cs232/.git/ORIG_HEAD                                                                                   0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/ORIG_HEAD                                                                                 100%   41     0.0KB/s   00:00    
+projects/cs232/.git/FETCH_HEAD                                                                                  0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/FETCH_HEAD                                                                                100%   97     0.1KB/s   00:00    
+projects/cs232/.git/index                                                                                       0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/index                                                                                     100% 1056     1.0KB/s   00:00    
+projects/cs232/.git/description                                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/description                                                                               100%   73     0.1KB/s   00:00    
+Entering projects/cs232/.git/branches
+Entering projects/cs232/.git/hooks
+projects/cs232/.git/hooks/prepare-commit-msg.sample                                                             0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/prepare-commit-msg.sample                                                           100% 1239     1.2KB/s   00:00    
+projects/cs232/.git/hooks/pre-commit.sample                                                                     0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/pre-commit.sample                                                                   100% 1642     1.6KB/s   00:00    
+projects/cs232/.git/hooks/pre-applypatch.sample                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/pre-applypatch.sample                                                               100%  398     0.4KB/s   00:00    
+projects/cs232/.git/hooks/pre-push.sample                                                                       0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/pre-push.sample                                                                     100% 1352     1.3KB/s   00:00    
+projects/cs232/.git/hooks/commit-msg.sample                                                                     0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/commit-msg.sample                                                                   100%  896     0.9KB/s   00:00    
+projects/cs232/.git/hooks/post-update.sample                                                                    0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/post-update.sample                                                                  100%  189     0.2KB/s   00:00    
+projects/cs232/.git/hooks/applypatch-msg.sample                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/applypatch-msg.sample                                                               100%  452     0.4KB/s   00:00    
+projects/cs232/.git/hooks/update.sample                                                                         0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/update.sample                                                                       100% 3611     3.5KB/s   00:00    
+projects/cs232/.git/hooks/pre-rebase.sample                                                                     0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/hooks/pre-rebase.sample                                                                   100% 4898     4.8KB/s   00:00    
+Entering projects/cs232/.git/refs
+Entering projects/cs232/.git/refs/tags
+Entering projects/cs232/.git/refs/heads
+projects/cs232/.git/refs/heads/master                                                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/refs/heads/master                                                                         100%   41     0.0KB/s   00:00    
+Entering projects/cs232/.git/refs/remotes
+Entering projects/cs232/.git/refs/remotes/origin
+projects/cs232/.git/refs/remotes/origin/master                                                                  0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/refs/remotes/origin/master                                                                100%   41     0.0KB/s   00:00    
+projects/cs232/.git/refs/remotes/origin/HEAD                                                                    0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/refs/remotes/origin/HEAD                                                                  100%   32     0.0KB/s   00:00    
+Entering projects/cs232/.git/logs
+Entering projects/cs232/.git/logs/refs
+Entering projects/cs232/.git/logs/refs/heads
+projects/cs232/.git/logs/refs/heads/master                                                                      0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/logs/refs/heads/master                                                                    100%  977     1.0KB/s   00:00    
+Entering projects/cs232/.git/logs/refs/remotes
+Entering projects/cs232/.git/logs/refs/remotes/origin
+projects/cs232/.git/logs/refs/remotes/origin/master                                                             0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/logs/refs/remotes/origin/master                                                           100%  770     0.8KB/s   00:00    
+projects/cs232/.git/logs/refs/remotes/origin/HEAD                                                               0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/logs/refs/remotes/origin/HEAD                                                             100%  193     0.2KB/s   00:00    
+projects/cs232/.git/logs/HEAD                                                                                   0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/logs/HEAD                                                                                 100%  977     1.0KB/s   00:00    
+projects/cs232/.git/COMMIT_EDITMSG                                                                              0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/COMMIT_EDITMSG                                                                            100%   22     0.0KB/s   00:00    
+projects/cs232/.git/packed-refs                                                                                 0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/packed-refs                                                                               100%  107     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects
+Entering projects/cs232/.git/objects/d3
+projects/cs232/.git/objects/d3/803f530bf420ca50d530c3372d6e4c1eb37bef                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/d3/803f530bf420ca50d530c3372d6e4c1eb37bef                                         100%  125     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/8a
+projects/cs232/.git/objects/8a/b4cdf998cf143937ec8d596ae5d2264b93c916                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/8a/b4cdf998cf143937ec8d596ae5d2264b93c916                                         100%  706     0.7KB/s   00:00    
+Entering projects/cs232/.git/objects/7c
+projects/cs232/.git/objects/7c/6f047b919eba6f8342d7c00305757539d5fd11                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/7c/6f047b919eba6f8342d7c00305757539d5fd11                                         100%   88     0.1KB/s   00:00    
+projects/cs232/.git/objects/7c/4dc69d14da9cf0a1a5bd81662b49c87fdf25f5                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/7c/4dc69d14da9cf0a1a5bd81662b49c87fdf25f5                                         100% 4058     4.0KB/s   00:00    
+Entering projects/cs232/.git/objects/1d
+projects/cs232/.git/objects/1d/67526f53522a553346b30bf19b91a648fd616c                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/1d/67526f53522a553346b30bf19b91a648fd616c                                         100%  127     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/5d
+projects/cs232/.git/objects/5d/467d74eae2724f54c119847898d4fa17feffaf                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/5d/467d74eae2724f54c119847898d4fa17feffaf                                         100%  125     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/ce
+projects/cs232/.git/objects/ce/f6e3300da243d3cd9720e7db793a2d2e5e798c                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/ce/f6e3300da243d3cd9720e7db793a2d2e5e798c                                         100%  573     0.6KB/s   00:00    
+Entering projects/cs232/.git/objects/ab
+projects/cs232/.git/objects/ab/8235b8ef7cabba6ee06b08f02b7f694e05a48a                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/ab/8235b8ef7cabba6ee06b08f02b7f694e05a48a                                         100%  129     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/05
+projects/cs232/.git/objects/05/2aa74f5a6963feb6547a6da523867c035eac52                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/05/2aa74f5a6963feb6547a6da523867c035eac52                                         100%  125     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/e1
+projects/cs232/.git/objects/e1/401ae51e7ba6d6fbb5329d472449b05545cef4                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/e1/401ae51e7ba6d6fbb5329d472449b05545cef4                                         100%   87     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/62
+projects/cs232/.git/objects/62/7ef73e9d34f3321afe2294b7b9bf43e90b50ff                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/62/7ef73e9d34f3321afe2294b7b9bf43e90b50ff                                         100%  166     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/7b
+projects/cs232/.git/objects/7b/291f41c84d3770503b6bd5311c65a718cc959d                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/7b/291f41c84d3770503b6bd5311c65a718cc959d                                         100%  571     0.6KB/s   00:00    
+Entering projects/cs232/.git/objects/55
+projects/cs232/.git/objects/55/8323406fe44885fac78941e1344b7b1d05f75a                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/55/8323406fe44885fac78941e1344b7b1d05f75a                                         100%  167     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/bd
+projects/cs232/.git/objects/bd/dcb06dd42b87c90de94ec5bc929019a9046577                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/bd/dcb06dd42b87c90de94ec5bc929019a9046577                                         100%  667     0.7KB/s   00:00    
+Entering projects/cs232/.git/objects/a3
+projects/cs232/.git/objects/a3/d7135518494c4f72b83ea0ff088bcda69c820b                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/a3/d7135518494c4f72b83ea0ff088bcda69c820b                                         100%  262     0.3KB/s   00:00    
+Entering projects/cs232/.git/objects/4d
+projects/cs232/.git/objects/4d/19b497267cf2fc99a5394b81a0e4a10ced90f7                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/4d/19b497267cf2fc99a5394b81a0e4a10ced90f7                                         100% 1092     1.1KB/s   00:00    
+Entering projects/cs232/.git/objects/85
+projects/cs232/.git/objects/85/25cde6d6e501243ccd12e72aec230cb68d7c41                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/85/25cde6d6e501243ccd12e72aec230cb68d7c41                                         100%  169     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/fe
+projects/cs232/.git/objects/fe/3780ed53aa40bec619f2dd07014f431ebf23c5                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/fe/3780ed53aa40bec619f2dd07014f431ebf23c5                                         100%  162     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/87
+projects/cs232/.git/objects/87/4e5bd5b9e6d5931799b5ba0d071196ee214c9c                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/87/4e5bd5b9e6d5931799b5ba0d071196ee214c9c                                         100%  387     0.4KB/s   00:00    
+Entering projects/cs232/.git/objects/32
+projects/cs232/.git/objects/32/2481f3ebedfe01197bdc2adba122516307156a                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/32/2481f3ebedfe01197bdc2adba122516307156a                                         100% 3462     3.4KB/s   00:00    
+Entering projects/cs232/.git/objects/6b
+projects/cs232/.git/objects/6b/d847424b5cca763b3e18f9ef8779c1e69ccbfa                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/6b/d847424b5cca763b3e18f9ef8779c1e69ccbfa                                         100%   55     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/d2
+projects/cs232/.git/objects/d2/3a429e25fd286106bc8e063573902e4f62ed12                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/d2/3a429e25fd286106bc8e063573902e4f62ed12                                         100%  165     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/44
+projects/cs232/.git/objects/44/697a90c9f7ce65494b895d7ed8e6b39a1564bc                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/44/697a90c9f7ce65494b895d7ed8e6b39a1564bc                                         100% 2845     2.8KB/s   00:00    
+Entering projects/cs232/.git/objects/2f
+projects/cs232/.git/objects/2f/9998a5c83b9a5830792cfdb6446a477e7a21d6                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/2f/9998a5c83b9a5830792cfdb6446a477e7a21d6                                         100%  172     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/38
+projects/cs232/.git/objects/38/f50097016e53b3bbd1d3cccd3c47589ebb17f7                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/38/f50097016e53b3bbd1d3cccd3c47589ebb17f7                                         100%  164     0.2KB/s   00:00    
+Entering projects/cs232/.git/objects/82
+projects/cs232/.git/objects/82/13a824124b7723903c66f470687e3bb4d01d84                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/82/13a824124b7723903c66f470687e3bb4d01d84                                         100%  129     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/66
+projects/cs232/.git/objects/66/6b93de5a346f0863608909b64bacffe7b2b671                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/66/6b93de5a346f0863608909b64bacffe7b2b671                                         100%   92     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/pack
+Entering projects/cs232/.git/objects/f6
+projects/cs232/.git/objects/f6/67ff4cc40dd2fce97ea30ac030c1e1fcc6d8fe                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/f6/67ff4cc40dd2fce97ea30ac030c1e1fcc6d8fe                                         100%  841     0.8KB/s   00:00    
+Entering projects/cs232/.git/objects/c0
+projects/cs232/.git/objects/c0/4bc94b15644b3479eed06511979333c3d68075                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/c0/4bc94b15644b3479eed06511979333c3d68075                                         100%  125     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/ff
+projects/cs232/.git/objects/ff/c88f643121ca6ce4f197d26b99388a4d110639                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/ff/c88f643121ca6ce4f197d26b99388a4d110639                                         100% 3587     3.5KB/s   00:00    
+Entering projects/cs232/.git/objects/info
+Entering projects/cs232/.git/objects/a9
+projects/cs232/.git/objects/a9/28a45271bd965fe358f8e0a5d1c5c0f91e50cf                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/a9/28a45271bd965fe358f8e0a5d1c5c0f91e50cf                                         100%   91     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/76
+projects/cs232/.git/objects/76/db949cc3fb6c31e5afaf2457f6544c9aa09338                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/76/db949cc3fb6c31e5afaf2457f6544c9aa09338                                         100%   26     0.0KB/s   00:00    
+Entering projects/cs232/.git/objects/ba
+projects/cs232/.git/objects/ba/48b78e9d27722efe1c50a914ae3ae64f8e0845                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/ba/48b78e9d27722efe1c50a914ae3ae64f8e0845                                         100%   86     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/3c
+projects/cs232/.git/objects/3c/e93411eae76cfe9d7f9e8948cc52a73953233f                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/3c/e93411eae76cfe9d7f9e8948cc52a73953233f                                         100%   92     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/6d
+projects/cs232/.git/objects/6d/ff09e92088679337735cecbf0c740afbafe7ad                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/6d/ff09e92088679337735cecbf0c740afbafe7ad                                         100%   91     0.1KB/s   00:00    
+Entering projects/cs232/.git/objects/dc
+projects/cs232/.git/objects/dc/e462d4b7e8fef73f41fca40a3a586568575570                                           0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/objects/dc/e462d4b7e8fef73f41fca40a3a586568575570                                         100%  134     0.1KB/s   00:00    
+projects/cs232/.git/HEAD                                                                                        0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/HEAD                                                                                      100%   23     0.0KB/s   00:00    
+Entering projects/cs232/.git/info
+projects/cs232/.git/info/exclude                                                                                0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/info/exclude                                                                              100%  240     0.2KB/s   00:00    
+projects/cs232/.git/config                                                                                      0%    0     0.0KB/s   --:-- ETAprojects/cs232/.git/config                                                                                    100%  264     0.3KB/s   00:00    
+sftp> ls
+cs232             examples.desktop  
+sftp> exit
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ exit
+exit
+
+Script done on Thursday 28 March 2019 09:50:14 AM IST
