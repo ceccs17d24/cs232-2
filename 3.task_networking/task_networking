@@ -1,0 +1,64 @@
+Script started on Thursday 28 March 2019 11:13:03 AM IST
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 10:78:d2:cf:2f:6b  
+          inet addr:192.168.0.224  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::1278:d2ff:fecf:2f6b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:112840 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:15943 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:29211204 (29.2 MB)  TX bytes:2505871 (2.5 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:361 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:361 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:44587 (44.5 KB)  TX bytes:44587 (44.5 KB)
+
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifconfig etho[K0
+eth0      Link encap:Ethernet  HWaddr 10:78:d2:cf:2f:6b  
+          inet addr:192.168.0.224  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::1278:d2ff:fecf:2f6b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:112921 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:15943 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:29218289 (29.2 MB)  TX bytes:2505871 (2.5 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifconfig eth0 up
+SIOCSIFFLAGS: Operation not permitted
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ sudo !!
+sudo ifconfig eth0 up
+[sudo] password for s4d2: 
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifo[Kconfig etho[K0 down[1@s[1@u[1@d[1@o[1@ 
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ sudo ifconfig eth0 up
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifconfig -a
+eth0      Link encap:Ethernet  HWaddr 10:78:d2:cf:2f:6b  
+          inet addr:192.168.0.224  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::1278:d2ff:fecf:2f6b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:113410 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16024 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:29274856 (29.2 MB)  TX bytes:2520597 (2.5 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:536 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:536 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:71687 (71.6 KB)  TX bytes:71687 (71.6 KB)
+
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ ifconfig eht[K[Kth0 192.19[K68.0.224[1@s[1@u[1@d[1@o[1@ 
+]0;s4d2@ceclab2-Veriton-Series: ~s4d2@ceclab2-Veriton-Series:~$ exit
+exit
+
+Script done on Thursday 28 March 2019 11:15:28 AM IST
