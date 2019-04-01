@@ -1,0 +1,31 @@
+Script started on Monday 01 April 2019 10:26:35 AM IST
+]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ ls
+ftp.script  ftp.sh  [0m[01;35mnginx_http_server.png[0m
+]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ sftp[K[K[K[Ksudo apt install  f[Ksftp[K[K[K[Kvsftpd
+[sudo] password for s4d2: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+vsftpd is already the newest version.
+The following packages were automatically installed and are no longer required:
+  account-plugin-windows-live libdbusmenu-gtk4 libntdb1 libqpdf13 libupstart1
+  python-ntdb
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ sudo[K[Kdo vsftpo[Kd
+500 OOPS: could not bind listening IPv4 socket
+]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ sudo [K[K[K[Kftpd[K localhostslocalhost4localhost [A]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ [C[C[C[C[C[C[Cdlocalhostt[A]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ [C[C[C[C[C[C[C[C2localhost[A]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ [C[C[C[C[C[C[C[C[C@localhost[A]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ [C[C[C[C[C[C[C[C[C[C
+
+s4d2@localhost's password: 
+Connected to localhost.
+sftp> ls
+Desktop             Documents           Downloads           Music               
+Pictures            Public              Templates           Videos              
+cs232               examples.desktop    projects            
+sftp> mkdir
+You must specify a path after a mkdir command.
+sftp> mdi[K[K[Kexit
+]0;s4d2@ceclab2-Veriton-Series: ~/projects/cs232/7.http_ftp_servers4d2@ceclab2-Veriton-Series:~/projects/cs232/7.http_ftp_server$ exit
+exit
+
+Script done on Monday 01 April 2019 10:29:05 AM IST
