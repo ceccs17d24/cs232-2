@@ -9,6 +9,6 @@
  - [x] Setting up HTTP and FTP server
 ##### Further Tasks
    - [x] Package Management
-   - [ ] Perl
+   - [x] Perl
    - [ ] LAMP
    - [ ] Kernel Compilation
