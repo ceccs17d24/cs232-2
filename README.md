@@ -5,7 +5,7 @@
  - [x] Networking Task
  - [x] SSH, Rsync, SCP
  - [x] FTP
- - [ ] Linux Installation
+ - [x] Linux Installation
  - [x] Setting up HTTP and FTP server
 ##### Further Tasks
    - [x] Package Management
