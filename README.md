@@ -7,7 +7,7 @@
  - [x] FTP
  - [ ] Linux Installation
  - [x] Setting up HTTP and FTP server
- - ##### Further Tasks
+##### Further Tasks
    - [x] Package Management
    - [ ] Perl
    - [ ] LAMP
