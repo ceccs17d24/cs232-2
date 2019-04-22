@@ -11,5 +11,5 @@
    - [x] Package Management
    - [x] Perl
    - [x] LAMP
-   - [ ] Kernel Compilation
+   - [x] Kernel Compilation
  - [x] Create own server
