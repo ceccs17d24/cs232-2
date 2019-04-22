@@ -12,3 +12,4 @@
    - [x] Perl
    - [ ] LAMP
    - [ ] Kernel Compilation
+ - [x] Create own server
