@@ -1,0 +1,442 @@
+Script started on 2019-04-22 20:55:12+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo apt update
+[sudo] password for nikhil: 
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connected to mirror.karneval.cz (89.102.0.150)][0m[33m                                                   0% [Waiting for headers][0m                        Hit:1 https://mirror.karneval.cz/pub/linux/kali kali-rolling InRelease
+[33m                        0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to ftp1.nluug.nl (145.220.21.40)][0m[33m                                                0% [Connected to ftp1.nluug.nl (145.220.21.40)][0m[33m                                               0% [Waiting for headers][0m                        Hit:2 https://ftp1.nluug.nl/os/Linux/distr/kali kali-rolling InRelease
+[33m                        0% [Working][0m[33m20% [Working][0m             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 48%Reading package lists... 48%Reading package lists... 48%Reading package lists... 48%Reading package lists... 49%Reading package lists... 49%Reading package lists... 79%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+5 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo apt install apache2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+apache2 is already the newest version (2.4.38-3).
+apache2 set to manually installed.
+The following packages were automatically installed and are no longer required:
+  efibootmgr libboost-date-time1.67.0 libboost-program-options1.67.0
+  libboost-python1.62.0 libboost-serialization1.67.0 libboost-system1.62.0
+  libboost-test1.67.0 libboost-thread1.62.0 libboost-timer1.67.0 libcgal13
+  libcrypt2 libfcgi-bin libfcgi0ldbl libicu-le-hb0 libicu60 liblwgeom-2.5-0
+  liblwgeom-dev libpyside1.2 libpython3.6 libpython3.6-dev
+  libpython3.6-minimal libpython3.6-stdlib libqca2 libqca2-plugins
+  libqgis-analysis2.18.25 libqgis-analysis2.18.28 libqgis-core2.18.25
+  libqgis-core2.18.28 libqgis-customwidgets libqgis-gui2.18.25
+  libqgis-gui2.18.28 libqgis-networkanalysis2.18.25
+  libqgis-networkanalysis2.18.28 libqgis-server2.18.25 libqgis-server2.18.28
+  libqgispython2.18.25 libqgispython2.18.28 libqtwebkit4 libqwt6abi1
+  libradare2-3.1 libsfcgal1 libshiboken1.2v5 libspatialindex4v5
+  libspatialindex5 libwhisker2-perl python-cycler python-kiwisolver
+  python-matplotlib python-matplotlib2-data python-nassl python-owslib
+  python-pyproj python-pyside.qtcore python-pyside.qtgui
+  python-pyside.qtnetwork python-pyside.qtwebkit python-pyspatialite
+  python-qgis python-qgis-common python-qt4-sql python-shapely
+  python-subprocess32 python3.6 python3.6-dev python3.6-minimal qt4-designer
+  ruby-dm-serializer ruby-faraday ruby-geoip ruby-libv8 ruby-ref
+  ruby-therubyracer
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo ufw app list
+sudo: ufw: command not found
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo apt install ufw
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr libboost-date-time1.67.0 libboost-program-options1.67.0
+  libboost-python1.62.0 libboost-serialization1.67.0 libboost-system1.62.0
+  libboost-test1.67.0 libboost-thread1.62.0 libboost-timer1.67.0 libcgal13
+  libcrypt2 libfcgi-bin libfcgi0ldbl libicu-le-hb0 libicu60 liblwgeom-2.5-0
+  liblwgeom-dev libpyside1.2 libpython3.6 libpython3.6-dev
+  libpython3.6-minimal libpython3.6-stdlib libqca2 libqca2-plugins
+  libqgis-analysis2.18.25 libqgis-analysis2.18.28 libqgis-core2.18.25
+  libqgis-core2.18.28 libqgis-customwidgets libqgis-gui2.18.25
+  libqgis-gui2.18.28 libqgis-networkanalysis2.18.25
+  libqgis-networkanalysis2.18.28 libqgis-server2.18.25 libqgis-server2.18.28
+  libqgispython2.18.25 libqgispython2.18.28 libqtwebkit4 libqwt6abi1
+  libradare2-3.1 libsfcgal1 libshiboken1.2v5 libspatialindex4v5
+  libspatialindex5 libwhisker2-perl python-cycler python-kiwisolver
+  python-matplotlib python-matplotlib2-data python-nassl python-owslib
+  python-pyproj python-pyside.qtcore python-pyside.qtgui
+  python-pyside.qtnetwork python-pyside.qtwebkit python-pyspatialite
+  python-qgis python-qgis-common python-qt4-sql python-shapely
+  python-subprocess32 python3.6 python3.6-dev python3.6-minimal qt4-designer
+  ruby-dm-serializer ruby-faraday ruby-geoip ruby-libv8 ruby-ref
+  ruby-therubyracer
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  ufw
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 164 kB of archives.
+After this operation, 852 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connected to mirror.karneval.cz (89.102.0.150)][0m[33m                                                   0% [Waiting for headers][0m                        Get:1 https://mirror.karneval.cz/pub/linux/kali kali-rolling/main amd64 ufw all 0.36-1 [164 kB]
+[33m8% [1 ufw 16.1 kB/164 kB 10%][0m[33m48% [1 ufw 98.0 kB/164 kB 60%][0m[33m                              72% [1 ufw 147 kB/164 kB 90%][0m[33m                             100% [Working][0m              Fetched 164 kB in 2s (66.2 kB/s)
+Preconfiguring packages ...
+
+7[0;23r8[1ASelecting previously unselected package ufw.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 350983 files and directories currently installed.)
+Preparing to unpack .../archives/ufw_0.36-1_all.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking ufw (0.36-1) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Setting up ufw (0.36-1) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 8
+Creating config file /etc/ufw/before.rules with new version
+
+Creating config file /etc/ufw/before6.rules with new version
+
+Creating config file /etc/ufw/after.rules with new version
+
+Creating config file /etc/ufw/after6.rules with new version
+Created symlink /etc/systemd/system/multi-user.target.wants/ufw.service → /lib/systemd/system/ufw.service.
+update-rc.d: We have no instructions for the ufw init script.
+update-rc.d: It looks like a non-network service, we enable it.
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for rsyslog (8.1901.0-1) ...
+Processing triggers for systemd (241-3) ...
+
+7[0;24r8[1A[J]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo apt install ufw[3Pufw app list
+Available applications:
+  AIM
+  Bonjour
+  CIFS
+  DNS
+  Deluge
+  IMAP
+  IMAPS
+  IPP
+  KTorrent
+  Kerberos Admin
+  Kerberos Full
+  Kerberos KDC
+  Kerberos Password
+  LDAP
+  LDAPS
+  LPD
+  MSN
+  MSN SSL
+  Mail submission
+  NFS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+  POP3
+  POP3S
+  PeopleNearby
+  SMTP
+  SSH
+  Samba
+  Socks
+  Telnet
+  Transmission
+  Transparent Proxy
+  VNC
+  WWW
+  WWW Cache
+  WWW Full
+  WWW Secure
+  XMPP
+  Yahoo
+  qBittorrent
+  svnserve
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo ufw app info "WWW Full "
+Profile: WWW Full
+Title: Web Server (HTTP,HTTPS)
+Description: Web Server (HTTP,HTTPS)
+
+Ports:
+  80,443/tcp
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo ufw app alo[K[K[K[K[K[K[Kallow in "WWW Full "
+Rules updated
+Rules updated (v6)
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo ufw allow in "WWW Full"[A]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ [C[C[C[C[C[C[C[C[C[Cpp info
+[C
+Profile: WWW Full
+Title: Web Server (HTTP,HTTPS)
+Description: Web Server (HTTP,HTTPS)
+
+Ports:
+  80,443/tcp
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ systemctl resta[K[K[K[K[Kenable apache2
+Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable apache2
+update-rc.d: error: Permission denied
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ sudo !!
+sudo systemctl enable apache2
+Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable apache2
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ su[Kystemctl re[K[Kstart apache2[C[1@s[1@u[1@dosystemctl start apache2 [A]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ [C[C[C[C systemctl start apache2[A]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ [C[C[C[C[C
+
+]0;nikhil@denied: ~/projects/cs232/8.further_tasks/LAMP[01;31mnikhil@denied[00m:[01;34m~/projects/cs232/8.further_tasks/LAMP[00m$ cd /var/www/html/
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ ls
+index.html  index.nginx-debian.html
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ rm index.nginx-debian.html ^C
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ nvim [K[K[K[K[Kvim index.html [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclear
+[H[2J[3J]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ ls
+index.html  index.nginx-debian.html
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ vim index.
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"index." [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll"index." [New File][1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ vim index.html 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"index.html" [readonly] 368L, 10701C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[34m<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.orr[3;1Hg/TR/xhtml1/DTD/xhtml1-transitional.dtd">[m
+[36m<[m[38;5;130mhtml[m[36m xmlns=[m[31m"http://www.w3.org/1999/xhtml"[m[36m>
+[m  [36m<[m[38;5;130mhead[m[36m>[m
+[35m    [m[36m<[m[38;5;130mmeta[m[36m [m[32mhttp-equiv[m[36m=[m[31m"Content-Type"[m[36m [m[32mcontent[m[36m=[m[31m"text/html; charset=UTF-8"[m[36m />[m
+[35m    [m[36m<[m[38;5;130mtitle[m[36m>[m[35mApache2 Debian Default Page: It works[m[36m</[m[38;5;130mtitle[m[36m>[m
+[35m    [m[36m<[m[38;5;130mstyle[m[36m [m[32mtype[m[36m=[m[31m"text/css"[m[36m [m[32mmedia[m[36m=[m[31m"screen"[m[36m>[m
+  [38;5;130m*[m [36m{[m
+    [32mmargin[m: [31m0px[m [31m0px[m [31m0px[m [31m0px[m;
+    [32mpadding[m: [31m0px[m [31m0px[m [31m0px[m [31m0px[m;
+  [36m}[m
+
+  [38;5;130mbody[m[35m,[m [38;5;130mhtml[m [36m{[m
+    [32mpadding[m: [31m3px[m [31m3px[m [31m3px[m [31m3px[m;[17;5H[32mbackground-color[m: [31m#D8DBE2[m;[19;5H[32mfont-family[m: [31mVerdana[m[35m,[m [31msans-serif[m;
+    [32mfont-size[m: [31m11pt[m;
+    [32mtext-align[m: [31mcenter[m;
+  [36m}[m[24;63H1,0-1[9CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1H[96m<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.orr[3;1Hg/TR/xhtml1/DTD/xhtml1-transitional.dtd">[m
+[1m[96m<[m[93mhtml[m[1m[96m xmlns=[m[95m"http://www.w3.org/1999/xhtml"[m[1m[96m>
+[m  [1m[96m<[m[93mhead[m[1m[96m>[m
+[38;5;81m    [m[1m[96m<[m[93mmeta[m[1m[96m [m[38;5;121mhttp-equiv[m[1m[96m=[m[95m"Content-Type"[m[1m[96m [m[38;5;121mcontent[m[1m[96m=[m[95m"text/html; charset=UTF-8"[m[1m[96m />[m
+[38;5;81m    [m[1m[96m<[m[93mtitle[m[1m[96m>[m[38;5;225mApache2 Debian Default Page: It works[m[1m[96m</[m[93mtitle[m[1m[96m>[m
+[38;5;81m    [m[1m[96m<[m[93mstyle[m[1m[96m [m[38;5;121mtype[m[1m[96m=[m[95m"text/css"[m[1m[96m [m[38;5;121mmedia[m[1m[96m=[m[95m"screen"[m[1m[96m>[m
+  [93m*[m [1m[96m{[m
+    [38;5;121mmargin[m: [95m0px[m [95m0px[m [95m0px[m [95m0px[m;
+    [38;5;121mpadding[m: [95m0px[m [95m0px[m [95m0px[m [95m0px[m;
+  [1m[96m}[m
+
+  [93mbody[m[38;5;224m,[m [93mhtml[m [1m[96m{[m
+    [38;5;121mpadding[m: [95m3px[m [95m3px[m [95m3px[m [95m3px[m;[17;5H[38;5;121mbackground-color[m: [95m#D8DBE2[m;[19;5H[38;5;121mfont-family[m: [95mVerdana[m[38;5;224m,[m [95msans-serif[m;
+    [38;5;121mfont-size[m: [95m11pt[m;
+    [38;5;121mtext-align[m: [95mcenter[m;
+  [1m[96m}[m[24;63H1,0-1[9CTop"index.html" [readonly] 368L, 10701C[1;1H[?25h[?25l[24;53Hj[1;1H[24;53H [2;1H[96m[46m<[m[78C[96mrr[3;1Hg[m[39C[96m[46m>[m[24;63H2,1  [2;1H[?25h[?25l[24;53Hk[2;1H[24;53H [1;1H
+[96m<[78Crr[3;1Hg[39C>[m[24;63H1,0-1[1;1H[?25h[?25l[24;53HV[1;1H[24;53H1[1;1H[24;1H[1m-- VISUAL LINE --[m[24;18H[K[24;53H1[1;1H[24;63H1,0-1[9CTop[1;1H[?25h[?25l[24;53HG[1;1H[24;53H368[23;1H[27m[23m[29m[m[H[2J[1;1H[48;5;242m                Please use the [m[1m[96m[48;5;242m<[m[93m[48;5;242mtt[m[1m[96m[48;5;242m>[m[48;5;242mreportbug[m[1m[96m[48;5;242m</[m[93m[48;5;242mtt[m[1m[96m[48;5;242m>[m[48;5;242m tool to report bugs in the 
+                Apache2 package with Debian. However, check [m[1m[96m[48;5;242m<[m[93m[48;5;242ma[m[48;5;242m [m
+[1m[96m[48;5;242m                [m[38;5;121m[48;5;242mhref[m[1m[96m[48;5;242m=[m[95m[48;5;242m"http://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normm[4;1Hal;archive=0;src=apache2;repeatmerged=0"[m[48;5;242m [m
+[1m[96m[48;5;242m                [m[38;5;121m[48;5;242mrel[m[1m[96m[48;5;242m=[m[95m[48;5;242m"nofollow"[m[1m[96m[48;5;242m>[m[4m[38;5;81m[48;5;242mexisting bug reports[m[1m[96m[48;5;242m</[m[93m[48;5;242ma[m[1m[96m[48;5;242m>[m[48;5;242m before reporting a new bb[6;1Hug. 
+          [m[1m[96m[48;5;242m</[m[93m[48;5;242mp[m[1m[96m[48;5;242m>[m[48;5;242m 
+          [m[1m[96m[48;5;242m<[m[93m[48;5;242mp[m[1m[96m[48;5;242m>[m[48;5;242m 
+                Please report bugs specific to modules (such as PHP and others) [10;1H                to respective packages, not to the web server itself. 
+          [m[1m[96m[48;5;242m</[m[93m[48;5;242mp[m[1m[96m[48;5;242m>[m[48;5;242m 
+        [m[1m[96m[48;5;242m</[m[93m[48;5;242mdiv[m[1m[96m[48;5;242m>[m[48;5;242m 
+ 
+ 
+ 
+ 
+      [m[1m[96m[48;5;242m</[m[93m[48;5;242mdiv[m[1m[96m[48;5;242m>[m[48;5;242m 
+    [m[1m[96m[48;5;242m</[m[93m[48;5;242mdiv[m[1m[96m[48;5;242m>[m[48;5;242m 
+    [m[1m[96m[48;5;242m<[m[93m[48;5;242mdiv[m[1m[96m[48;5;242m [m[38;5;121m[48;5;242mclass[m[1m[96m[48;5;242m=[m[95m[48;5;242m"validator"[m[1m[96m[48;5;242m>[m[48;5;242m 
+    [m[1m[96m[48;5;242m</[m[93m[48;5;242mdiv[m[1m[96m[48;5;242m>[m[48;5;242m 
+  [m[1m[96m[48;5;242m</[m[93m[48;5;242mbody[m[1m[96m[48;5;242m>[m[48;5;242m [m
+[1m[96m[48;5;242m</[m[93m[48;5;242mhtml[m[1m[96m[48;5;242m>[m[48;5;242m [m
+
+[1m-- VISUAL LINE --[m[35C368[23;1H[24;63H368,0-1[7CBot[23;1H[?25h[?25l[24;53Hd  [23;1H
+[38;5;224mW10: Warning: Changing a readonly file[m[24;53H[K[?1006l[?1002l[?2004l[?1006h[?1002h[?2004h[1;1H[1;1H[K[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;1H[K[24;63H0,0-1[9CAll--No lines in buffer--[24;63H[K[24;63H0,0-1[9CAll[1;1H[?25h[?25l[24;53Hi[1;1H[24;53H [1;1H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H0,1[11CAll[1;1H[?25h[?25l[97m[101m<[m[24;63H1,2[1;2H[?25h[?25l[96m<![m[24;65H3[1;3H[?25h[?25l[97m[101mD[m[24;65H4[1;4H[?25h[?25l[97m[101mO[m[24;65H5[1;5H[?25h[?25l[97m[101mC[m[24;65H6[1;6H[?25h[?25l[97m[101mT[m[24;65H7[1;7H[?25h[?25l[97m[101mY[m[24;65H8[1;8H[?25h[?25l[97m[101mP[m[24;65H9[1;9H[?25h[?25l[1;3H[96mDOCTYPE[m[24;65H10[1;10H[?25h[?25l[96m [m[24;66H1[1;11H[?25h[?25l[96mh[m[24;66H2[1;12H[?25h[?25l[96mt[m[24;66H3[1;13H[?25h[?25l[96mm[m[24;66H4[1;14H[?25h[?25l[96ml[m[24;66H5[1;15H[?25h[?25l[96m>[m[96m[46m<[13C>[m[24;66H6[1;16H[?25h[?25l[2;1H[K[1;1H[96m<[13C>[m[24;63H2,1 [2;1H[?25h[?25l[97m[101m<[m[24;65H2[2;2H[?25h[?25l[1m[96m<[mh[24;65H3[2;3H[?25h[?25lt[24;65H4[2;4H[?25h[?25lm[24;65H5[2;5H[?25h[?25l[2;2H[93mhtml[m[24;65H6[2;6H[?25h[?25l[1m[96m>[m[1m[96m[46m<[m[93mh[m[3C[1m[96m[46m>[m[24;65H7[2;7H[?25h[?25l
+        [3;9H[K[2;1H[1m[96m<[m[93mh[m[3C[1m[96m>[m[24;63H3,2-9[3;9H[?25h[?25l[97m[101m<[m[24;65H3-10[3;10H[?25h[?25l[1m[96m<[mh[24;65H4-11[3;11H[?25h[?25le[24;65H5-12[3;12H[?25h[?25la[24;65H6-13[3;13H[?25h[?25l[3;12H[K[24;65H5-12[3;12H[?25h[?25l[3;11H[K[24;65H4-11[3;11H[?25h[?25l[97m[101m<[m[3;10H[K[24;65H3-10[3;10H[?25h[?25l[3;9H[K[24;65H2-9 [3;9H[?25h[?25l[24;65H1  [3;1H[?25h[?25l[94m~                                                                               [m[2;1H[1m[96m[46m<[m[93mh[m[3C[1m[96m[46m>[m[24;63H2,7[2;7H[?25h[?25l[2;6H[K[2;1H[1m[96m<[m[93mh[m[24;65H6[2;6H[?25h[?25l[1m[96m [m[24;65H7[2;7H[?25h[?25l[1m[96ml[m[24;65H8[2;8H[?25h[?25l[1m[96ma[m[24;65H9[2;9H[?25h[?25l[1m[96mn[m[24;65H10[2;10H[?25h[?25l[38;5;121mlang[m[24;66H1[2;11H[?25h[?25l[1m[96m=[m[24;66H2[2;12H[?25h[?25l[95m"[m[24;66H3[2;13H[?25h[?25l[95me[m[24;66H4[2;14H[?25h[?25l[95mn[m[24;66H5[2;15H[?25h[?25l[95m"[m[24;66H6[2;16H[?25h[?25l[1m[96m>[m[1m[96m[46m<[m[93mh[m[13C[1m[96m[46m>[m[24;66H7[2;17H[?25h[?25l
+        [3;9H[K[2;1H[1m[96m<[m[93mh[m[13C[1m[96m>[m[24;63H3,2-9[3;9H[?25h[?25l[97m[101m<[m[24;65H3-10[3;10H[?25h[?25l[1m[96m<[mh[24;65H4-11[3;11H[?25h[?25le[24;65H5-12[3;12H[?25h[?25la[24;65H6-13[3;13H[?25h[?25l[93mhead[m[24;65H7-14[3;14H[?25h[?25l[1m[96m>[m[1m[96m[46m<[m[93mh[m[3C[1m[96m[46m>[m[24;65H8-15[3;15H[?25h[?25l
+[38;5;81m                [m[4;17H[K[3;9H[1m[96m<[m[93mh[m[3C[1m[96m>[m[24;63H4,3-17[4;17H[?25h[?25l[38;5;81m<[m[24;65H4-18[4;18H[?25h[?25l[1m[96m<[mm[24;65H5-19[4;19H[?25h[?25le[24;65H6-20[4;20H[?25h[?25lt[24;65H7-21[4;21H[?25h[?25l[93mmeta[m[24;65H8-22[4;22H[?25h[?25l[1m[96m [m[24;65H9-23[4;23H[?25h[?25l[1m[96mc[m[24;65H10-24[4;24H[?25h[?25l[1m[96mh[m[24;66H1-25[4;25H[?25h[?25l[1m[96ma[m[24;66H2-26[4;26H[?25h[?25l[38;5;121mchar[m[24;66H3-27[4;27H[?25h[?25l[1m[96mchars[m[24;66H4-28[4;28H[?25h[?25l[1m[96me[m[24;66H5-29[4;29H[?25h[?25l[38;5;121mcharset[m[24;66H6-30[4;30H[?25h[?25l[1m[96m=[m[24;66H7-31[4;31H[?25h[?25l[95m"[m[24;66H8-32[4;32H[?25h[?25l[95mu[m[24;66H9-33[4;33H[?25h[?25l[95mt[m[24;65H20-34[4;34H[?25h[?25l[95mf[m[24;66H1-35[4;35H[?25h[?25l[95m-[m[24;66H2-36[4;36H[?25h[?25l[95m8[m[24;66H3-37[4;37H[?25h[?25l[95m"[m[24;66H4-38[4;38H[?25h[?25l[1m[96m>[m[4;17H[1m[96m[46m<[m[93mm[m[19C[1m[96m[46m>[m[24;66H5-39[4;39H[?25h[?25l
+[38;5;81m                [m[5;17H[K[4;17H[1m[96m<[m[93mm[m[19C[1m[96m>[m[24;63H5,3-17 [5;17H[?25h[?25l[38;5;81m<[m[24;65H4-18[5;18H[?25h[?25l[1m[96m<[mt[24;65H5-19[5;19H[?25h[?25li[24;65H6-20[5;20H[?25h[?25lt[24;65H7-21[5;21H[?25h[?25ll[24;65H8-22[5;22H[?25h[?25l[93mtitle[m[24;65H9-23[5;23H[?25h[?25l[1m[96m>[m[5;17H[1m[96m[46m<[m[93mt[m[4C[1m[96m[46m>[m[24;65H10-24[5;24H[?25h[?25l[38;5;225mc[m[5;17H[1m[96m<[m[93mt[m[4C[1m[96m>[m[38;5;225mc[m[24;66H1-25[5;25H[?25h[?25l[38;5;225me[m[24;66H2-26[5;26H[?25h[?25l[38;5;225mc[m[24;66H3-27[5;27H[?25h[?25l[38;5;225mc[m[24;66H4-28[5;28H[?25h[?25l[38;5;225ms[m[24;66H5-29[5;29H[?25h[?25l[38;5;225m1[m[24;66H6-30[5;30H[?25h[?25l[38;5;225m8[m[24;66H7-31[5;31H[?25h[?25l[5;30H[K[24;66H6-30[5;30H[?25h[?25l[38;5;225m7[m[24;66H7-31[5;31H[?25h[?25l[38;5;225md[m[24;66H8-32[5;32H[?25h[?25l[38;5;225m3[m[24;66H9-33[5;33H[?25h[?25l[38;5;225m6[m[24;65H20-34[5;34H[?25h[?25l[38;5;225m<[m[24;66H1-35[5;35H[?25h[?25l[1m[96m</[m[24;66H2-36[5;36H[?25h[?25lt[24;66H3-37[5;37H[?25h[?25li[24;66H4-38[5;38H[?25h[?25lt[24;66H5-39[5;39H[?25h[?25ll[24;66H6-40[5;40H[?25h[?25l[93mtitle[m[24;66H7-41[5;41H[?25h[?25l[1m[96m>[m[5;34H[1m[96m[46m<[m[1m[96m/[m[93mt[m[4C[1m[96m[46m>[m[24;66H8-42[5;42H[?25h[?25l
+[38;5;81m                [m[6;17H[K[5;34H[1m[96m</[m[93mt[m[4C[1m[96m>[m[24;63H6,3-17 [6;17H[?25h[?25l[38;5;81m<[m[24;65H4-18[6;18H[?25h[?25l[1m[96m</[m[24;65H5-19[6;19H[?25h[?25lh[24;65H6-20[6;20H[?25h[?25le[24;65H7-21[6;21H[?25h[?25la[24;65H8-22[6;22H[?25h[?25l[93mhead[m[24;65H9-23[6;23H[?25h[?25l[6;9H[1m[96m</[m[93mhead[m[1m[96m>[m[6;16H[K[6;9H[1m[96m[46m<[m[1m[96m/[m[93mh[m[3C[1m[96m[46m>[m[24;67H16[6;16H[?25h[?25l
+        [7;9H[K[6;9H[1m[96m</[m[93mh[m[3C[1m[96m>[m[24;63H7,2-9 [7;9H[?25h[?25l[97m[101m<[m[24;65H3-10[7;10H[?25h[?25l[1m[96m<[m[93mb[m[24;65H4-11[7;11H[?25h[?25lbo[24;65H5-12[7;12H[?25h[?25ld[24;65H6-13[7;13H[?25h[?25l[93mbody[m[24;65H7-14[7;14H[?25h[?25l[1m[96m>[m[1m[96m[46m<[m[93mb[m[3C[1m[96m[46m>[m[24;65H8-15[7;15H[?25h[?25l
+                [8;17H[K[7;9H[1m[96m<[m[93mb[m[3C[1m[96m>[m[24;63H8,3-17[8;17H[?25h[?25l[97m[101m<[m[24;65H4-18[8;18H[?25h[?25l[1m[96m<[mh[24;65H5-19[8;19H[?25h[?25l[93mh1[m[24;65H6-20[8;20H[?25h[?25l[1m[96m>[m[1m[96m[46m<[m[93mh[m[1C[1m[96m[46m>[m[24;65H7-21[8;21H[?25h[?25l[38;5;225mc[m[1m[96m<[m[93mh[m[1C[1m[96m>[m[38;5;225mc[m[24;65H8-22[8;22H[?25h[?25l[38;5;225me[m[24;65H9-23[8;23H[?25h[?25l[38;5;225mc[m[24;65H10-24[8;24H[?25h[?25l[38;5;225mc[m[24;66H1-25[8;25H[?25h[?25l[38;5;225ms[m[24;66H2-26[8;26H[?25h[?25l[38;5;225m1[m[24;66H3-27[8;27H[?25h[?25l[38;5;225m7[m[24;66H4-28[8;28H[?25h[?25l[38;5;225md[m[24;66H5-29[8;29H[?25h[?25l[38;5;225m4[m[24;66H6-30[8;30H[?25h[?25l[8;29H[K[24;66H5-29[8;29H[?25h[?25l[38;5;225m3[m[24;66H6-30[8;30H[?25h[?25l[38;5;225m6[m[24;66H7-31[8;31H[?25h[?25l[38;5;225m<[m[24;66H8-32[8;32H[?25h[?25l[1m[96m</[m[24;66H9-33[8;33H[?25h[?25lt[24;65H20-34[8;34H[?25h[?25li[24;66H1-35[8;35H[?25h[?25lt[24;66H2-36[8;36H[?25h[?25ll[24;66H3-37[8;37H[?25h[?25l[93mtitle[m[24;66H4-38[8;38H[?25h[?25l[1m[96m>[m[8;31H[1m[96m[46m<[m[1m[96m/[m[93mt[m[4C[1m[96m[46m>[m[24;66H5-39[8;39H[?25h[?25l
+[38;5;225m                [m[9;17H[K[8;31H[1m[96m</[m[93mt[m[4C[1m[96m>[m[24;63H9,3-17 [9;17H[?25h[?25l[38;5;225m<[m[24;65H4-18[9;18H[?25h[?25l[1m[96m</[m[24;65H5-19[9;19H[?25h[?25l[93mb[m[24;65H6-20[9;20H[?25h[?25lbo[24;65H7-21[9;21H[?25h[?25ld[24;65H8-22[9;22H[?25h[?25l[93mbody[m[24;65H9-23[9;23H[?25h[?25l[9;9H[1m[96m</[m[93mbody[m[1m[96m>[m[9;16H[K[9;9H[1m[96m[46m<[m[1m[96m/[m[93mb[m[3C[1m[96m[46m>[m[24;67H16[9;16H[?25h[?25l
+[38;5;225m        [m[10;9H[K[9;9H[1m[96m</[m[93mb[m[3C[1m[96m>[m[24;63H10,2-9[10;9H[?25h[?25l[38;5;225m<[m[24;66H3-10[10;10H[?25h[?25l[1m[96m</[m[24;66H4-11[10;11H[?25h[?25lh[24;66H5-12[10;12H[?25h[?25lt[24;66H6-13[10;13H[?25h[?25lm[24;66H7-14[10;14H[?25h[?25l[93mhtml[m[24;66H8-15[10;15H[?25h[?25l[1m[96m</[m[93mhtml[m[1m[96m>[m[10;8H[K[10;1H[1m[96m[46m<[m[1m[96m/[m[93mh[m[3C[1m[96m[46m>[m[24;67H   [10;8H[?25h[24;1H[K[10;7H[?25l[24;53H^[[10;7H[24;53H  [10;8H[24;63H10,7[10CAll[10;7H[?25h[?25l[24;53H:[10;7H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[97m[41mE45: 'readonly' option is set (add ! to override)[?2004h[10;7H[m[24;63H10,7[10CAll[10;7H[?25h[?25l[24;53H:[10;7H[24;1H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[24;3H[K[24;3H[?25h[?25l[24;2H[K[24;2H[?25h [?25l[10;7H[24;63H10,7[10CAll[10;7H[?25h[?25l[24;53HV[10;7H[24;53H1[10;7H[1m[96m[48;5;242m</[m[93m[48;5;242mhtml[m[1C[48;5;242m [m[24;1H[1m-- VISUAL LINE --[m[24;53H[K[24;53H1[10;7H[24;63H10,7[10CAll[10;7H[?25h[?25l[24;53Hk[10;7H[24;53H2[9;1H[1C[48;5;242m       [m[1m[96m[48;5;242m</[m[93m[48;5;242mbody[m[1m[96m[48;5;242m>[m[48;5;242m [m[10;7H[1m[96m[48;5;242m>[m[48;5;242m [m[24;63H9,1 [9;1H[?25h[?25l[24;53Hk[9;1H[24;53H3[8;1H [48;5;242m               [m[1m[96m[48;5;242m<[m[93m[48;5;242mh1[m[1m[96m[48;5;242m>[m[38;5;225m[48;5;242mceccs17d36[m[1m[96m[48;5;242m</[m[93m[48;5;242mtitle[m[1m[96m[48;5;242m>[m[48;5;242m [m
+[38;5;225m[48;5;242m [m[24;63H8[8;1H[?25h[?25l[24;53Hk[8;1H[24;53H4[7;1H [48;5;242m       [m[1m[96m[48;5;242m<[m[93m[48;5;242mbody[m[1m[96m[48;5;242m>[m[48;5;242m 
+ [m[24;63H7[7;1H[?25h[?25l[24;53Hk[7;1H[24;53H5[6;1H[1C[48;5;242m       [m[1m[96m[48;5;242m</[m[93m[48;5;242mhead[m[1m[96m[48;5;242m>[m[48;5;242m 
+ [m[24;63H6[6;1H[?25h[?25l[24;53Hk[6;1H[24;53H6[5;1H[1C[48;5;242m       [m[38;5;81m[48;5;242m [m[48;5;242m       [m[1m[96m[48;5;242m<[m[93m[48;5;242mtitle[m[1m[96m[48;5;242m>[m[38;5;225m[48;5;242mceccs17d36[m[1m[96m[48;5;242m</[m[93m[48;5;242mtitle[m[1m[96m[48;5;242m>[m[48;5;242m [m
+[38;5;81m[48;5;242m [m[24;63H5[5;1H[?25h[?25l[24;53Hk[5;1H[24;53H7[4;1H[1C[48;5;242m       [m[38;5;81m[48;5;242m [m[48;5;242m       [m[1m[96m[48;5;242m<[m[93m[48;5;242mmeta[m[1m[96m[48;5;242m [m[38;5;121m[48;5;242mcharset[m[1m[96m[48;5;242m=[m[95m[48;5;242m"utf-8"[m[1m[96m[48;5;242m>[m[48;5;242m [m
+[38;5;81m[48;5;242m [m[24;63H4[4;1H[?25h[?25l[24;53Hk[4;1H[24;53H8[3;1H [48;5;242m       [m[1m[96m[48;5;242m<[m[93m[48;5;242mhead[m[1m[96m[48;5;242m>[m[48;5;242m [m
+[38;5;81m[48;5;242m [m[24;63H3[3;1H[?25h[?25l[24;53Hk[3;1H[24;53H9[2;7H[1m[96m[48;5;242m<[m[93m[48;5;242mhtml[m[1m[96m[48;5;242m [m[38;5;121ml[m[38;5;121m[48;5;242mang[m[1m[96m[48;5;242m=[m[95m[48;5;242m"en"[m[1m[96m[48;5;242m>[m[48;5;242m 
+ [m[24;63H2,7[2;7H[?25h[?25l[24;53Hk[2;7H[24;53H10[1;7H[96m[48;5;242m<!DOCT[1CPE html>[m[48;5;242m [m[2;7H[38;5;121m[48;5;242ml[m[24;63H1[1;7H[?25h[?25l[24;53Hy [1;7H[96m<!DOCTYPE html>[m[1;16H[K[2;1H[1m[96m<[m[93mhtml[m[1m[96m [m[38;5;121mlang[m[1m[96m=[m[95m"en"[m[1m[96m>[m[2;17H[K[3;1H        [1m[96m<[m[93mhead[m[1m[96m>[m[3;15H[K[4;1H[38;5;81m                [m[1m[96m<[m[93mmeta[m[1m[96m [m[38;5;121mcharset[m[1m[96m=[m[95m"utf-8"[m[1m[96m>[m[4;39H[K[5;1H[38;5;81m                [m[1m[96m<[m[93mtitle[m[1m[96m>[m[38;5;225mceccs17d36[m[1m[96m</[m[93mtitle[m[1m[96m>[m[5;42H[K[6;1H[38;5;81m        [m[1m[96m</[m[93mhead[m[1m[96m>[m[6;16H[K[7;1H        [1m[96m<[m[93mbody[m[1m[96m>[m[7;15H[K[8;1H                [1m[96m<[m[93mh1[m[1m[96m>[m[38;5;225mceccs17d36[m[1m[96m</[m[93mtitle[m[1m[96m>[m[8;39H[K[9;1H[38;5;225m        [m[1m[96m</[m[93mbody[m[1m[96m>[m[9;16H[K[10;1H[1m[96m</[m[93mhtml[m[1m[96m>[m[10;8H[K[24;1H[K[24;63H1,7[11CAll10 lines yanked[24;63H[K[1;7H[24;63H1,7[11CAll[1;7H[?25h[?25l[24;53H:[1;7H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h![?25l[?25h[?25l[?1006l[?1002l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo apt isntal [K[K[K[K[K[Knstall mariadb-server
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  mariadb-server
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 29.8 kB of archives.
+After this operation, 66.6 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connecting to mirror.karneval.cz (2a02:8301:0:2::150)][0m[33m                                                          0% [Connected to mirror.karneval.cz (89.102.0.150)][0m[33m                                                   0% [Waiting for headers][0m                        Get:1 https://mirror.karneval.cz/pub/linux/kali kali-rolling/main amd64 mariadb-server all 1:10.3.13-2 [29.8 kB]
+[33m43% [1 mariadb-server 16.1 kB/29.8 kB 54%][0m[33m                                          100% [Working][0m              Fetched 29.8 kB in 2s (17.7 kB/s)
+
+7[0;23r8[1ASelecting previously unselected package mariadb-server.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 345701 files and directories currently installed.)
+Preparing to unpack .../mariadb-server_1%3a10.3.13-2_all.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking mariadb-server (1:10.3.13-2) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Setting up mariadb-server (1:10.3.13-2) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 87[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8
+7[0;24r8[1A[J]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo mysql_secure_installation
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we'll need the current
+password for the root user.  If you've just installed MariaDB, and
+you haven't set the root password yet, the password will be blank,
+so you should just press enter here.
+
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none): 
+Aborting!
+
+Cleaning up...
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo mysql_secure_installation
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we'll need the current
+password for the root user.  If you've just installed MariaDB, and
+you haven't set the root password yet, the password will be blank,
+so you should just press enter here.
+
+Enter current password for root (enter for none): 
+OK, successfully used password, moving on...
+
+Setting the root password ensures that nobody can log into the MariaDB
+root user without the proper authorisation.
+
+Set root password? [Y/n] y
+New password: 
+Re-enter new password: 
+Password updated successfully!
+Reloading privilege tables..
+ ... Success!
+
+
+By default, a MariaDB installation has an anonymous user, allowing anyone
+to log into MariaDB without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n] y
+ ... Success!
+
+Normally, root should only be allowed to connect from 'localhost'.  This
+ensures that someone cannot guess at the root password from the network.
+
+Disallow root login remotely? [Y/n] y
+ ... Success!
+
+By default, MariaDB comes with a database named 'test' that anyone can
+access.  This is also intended only for testing, and should be removed
+before moving into a production environment.
+
+Remove test database and access to it? [Y/n] y
+ - Dropping test database...
+ ... Success!
+ - Removing privileges on test database...
+ ... Success!
+
+Reloading the privilege tables will ensure that all changes made so far
+will take effect immediately.
+
+Reload privilege tables now? [Y/n] y
+ ... Success!
+
+Cleaning up...
+
+All done!  If you've completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo mariadb
+(B[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \g.
+(B[m(B[0;1mYour MariaDB connection id is 55
+Server version: 10.3.13-MariaDB-2 Debian buildd-unstable
+
+(B[m(B[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+(B[m(B[0;1mType 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+(B[m[?1034hMariaDB [(none)]> GRANT ALL ON *.* TO 'admin@[K'@'localhost' IDENTIFIED BY 'passwor d' WITH GRANT OPTION;
+(B[0;1mQuery OK, 0 rows affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> FLUSH PRIVILEGES;
+(B[0;1mQuery OK, 0 rows affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> exit
+(B[0;1mBye
+(B[m]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ mariadb -u admin -p
+Enter password: 
+(B[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \g.
+(B[m(B[0;1mYour MariaDB connection id is 56
+Server version: 10.3.13-MariaDB-2 Debian buildd-unstable
+
+(B[m(B[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+(B[m(B[0;1mType 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+(B[m[?1034hMariaDB [(none)]> exit
+(B[0;1mBye
+(B[m]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo apt install php libapache2-mod-php php-mysql
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+php is already the newest version (2:7.3+69).
+php set to manually installed.
+php-mysql is already the newest version (2:7.3+69).
+php-mysql set to manually installed.
+The following NEW packages will be installed:
+  libapache2-mod-php
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 6,120 B of archives.
+After this operation, 16.4 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Connecting to mirror.karneval.cz (2a02:8301:0:2::150)][0m[33m                                                          0% [Connected to mirror.karneval.cz (89.102.0.150)][0m[33m0% [Connected to mirror.karneval.cz (89.102.0.150)][0m                                                   Get:1 https://mirror.karneval.cz/pub/linux/kali kali-rolling/main amd64 libapache2-mod-php all 2:7.3+69 [6,120 B]
+[33m                                                   80% [1 libapache2-mod-php 6,120 B/6,120 B 100%][0m[33m                                               100% [Working][0m              Fetched 6,120 B in 2s (3,373 B/s)
+
+7[0;23r8[1ASelecting previously unselected package libapache2-mod-php.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 345704 files and directories currently installed.)
+Preparing to unpack .../libapache2-mod-php_2%3a7.3+69_all.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking libapache2-mod-php (2:7.3+69) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Setting up libapache2-mod-php (2:7.3+69) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 87[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8
+7[0;24r8[1A[J]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo vim /etc/paa[K[K[Kapache2/mods-enabled/dir.conf 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"/etc/apache2/mods-enabled/dir.conf" 5L, 157C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130m<IfModule[m[31m mod_dir.c[m[38;5;130m>[m[2;9H[36mDirectoryIndex[m index.html index.cgi index.pl index.php index.[31mxhtml[m indexx[3;1H.htm
+[38;5;130m</IfModule>[m
+
+[34m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[m
+[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93m<IfModule[m[95m mod_dir.c[m[93m>[m[2;9H[1m[96mDirectoryIndex[m index.html index.cgi index.pl index.php index.[95mxhtml[m indexx[3;1H.htm
+[93m</IfModule>[m
+
+[96m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[m
+[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"/etc/apache2/mods-enabled/dir.conf" 5L, 157C[1;1H[?25h[?25l[24;53Hj[1;1H[24;53H [2;8H[24;63H2,1-8[2;8H[?25h[?25l[24;53Hl[2;8H[24;53H [2;9H[24;65H2-9[2;9H[?25h[?25l[24;53Hl[2;9H[24;53H [2;10H[24;65H3-10[2;10H[?25h[?25l[24;53Hl[2;10H[24;53H [2;11H[24;65H4-11[2;11H[?25h[?25l[24;53Hl[2;11H[24;53H [2;12H[24;65H5-12[2;12H[?25h[?25l[24;53Hl[2;12H[24;53H [2;13H[24;65H6-13[2;13H[?25h[?25l[24;53Hl[2;13H[24;53H [2;14H[24;65H7-14[2;14H[?25h[?25l[24;53Hl[2;14H[24;53H [2;15H[24;65H8-15[2;15H[?25h[?25l[24;53Hl[2;15H[24;53H [2;16H[24;65H9-16[2;16H[?25h[?25l[24;53Hl[2;16H[24;53H [2;17H[24;65H10-17[2;17H[?25h[?25l[24;53Hl[2;17H[24;53H [2;18H[24;66H1-18[2;18H[?25h[?25l[24;53Hl[2;18H[24;53H [2;19H[24;66H2-19[2;19H[?25h[?25l[24;53Hl[2;19H[24;53H [2;20H[24;66H3-20[2;20H[?25h[?25l[24;53Hl[2;20H[24;53H [2;21H[24;66H4-21[2;21H[?25h[?25l[24;53Hl[2;21H[24;53H [2;22H[24;66H5-22[2;22H[?25h[?25l[24;53Hl[2;22H[24;53H [2;23H[24;66H6-23[2;23H[?25h[?25l[24;53Hl[2;23H[24;53H [2;24H[24;66H7-24[2;24H[?25h[?25l[24;53Hi[2;24H[24;53H [2;24H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,17-24[7CAll[2;24H[?25h[?25liindex.html index.cgi index.pl index.php index.[95mxhtml[m indee[3;1Hx.htm[24;66H8-25[2;25H[?25h[?25lnindex.html index.cgi index.pl index.php index.[95mxhtml[m indd[3;1Hex.htm[24;66H9-26[2;26H[?25h[?25ldindex.html index.cgi index.pl index.php index.[95mxhtml[m inn[3;1Hdex.htm[24;65H20-27[2;27H[?25h[?25leindex.html index.cgi index.pl index.php index.[95mxhtml[m ii[3;1Hndex.htm[24;66H1-28[2;28H[?25h[?25lxindex.html index.cgi index.pl index.php index.[95mxhtml[m  [3;1Hindex.htm[24;66H2-29[2;29H[?25h[?25l.index.html index.cgi index.pl index.php index.[95mxhtmll[m[3;1H index.htm[24;66H3-30[2;30H[?25h[?25lhindex.html index.cgi index.pl index.php index.[95mxhtmm[3;1Hl[m index.htm[24;66H4-31[2;31H[?25h[?25ltindex.html index.cgi index.pl index.php index.[95mxhtt[3;1Hml[m index.htm[24;66H5-32[2;32H[?25h[?25lmindex.html index.cgi index.pl index.php index.[95mxhh[3;1Html[m index.htm[24;66H6-33[2;33H[?25h[?25llindex.html index.cgi index.pl index.php index.[95mxx[3;1Hhtml[m index.htm[24;66H7-34[2;34H[?25h[?25l index.html index.cgi index.pl index.php index..[3;1H[95mxhtml[m index.htm[24;66H8-35[2;35H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxx[3;1Hhtml[m index.htm[3;15H[K[24;66H7-34[2;34H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhh[3;1Html[m index.htm[3;14H[K[24;66H6-33[2;33H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhtt[3;1Hml[m index.htm[3;13H[K[24;66H5-32[2;32H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhtmm[3;1Hl[m index.htm[3;12H[K[24;66H4-31[2;31H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhtmll[m[3;1H index.htm[3;11H[K[24;66H3-30[2;30H[?25h[?25lpindex.html index.cgi index.pl index.php index.[95mxhtmm[3;1Hl[m index.htm[24;66H4-31[2;31H[?25h[?25lpindex.html index.cgi index.pl index.php index.[95mxhtt[3;1Hml[m index.htm[24;66H5-32[2;32H[?25h[?25lhindex.html index.cgi index.pl index.php index.[95mxhh[3;1Html[m index.htm[24;66H6-33[2;33H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhtt[3;1Hml[m index.htm[3;13H[K[24;66H5-32[2;32H[?25h[?25lindex.html index.cgi index.pl index.php index.[95mxhtmm[3;1Hl[m index.htm[3;12H[K[24;66H4-31[2;31H[?25h[?25lhindex.html index.cgi index.pl index.php index.[95mxhtt[3;1Hml[m index.htm[24;66H5-32[2;32H[?25h[?25lpindex.html index.cgi index.pl index.php index.[95mxhh[3;1Html[m index.htm[24;66H6-33[2;33H[?25h[?25l index.html index.cgi index.pl index.php index.[95mxx[3;1Hhtml[m index.htm[24;66H7-34[2;34H[?25h[?25l[24;63H5,39   [6;39H[?25h[24;1H[K[6;38H[?25l[24;53H^[[6;38H[24;53H  [6;39H[24;63H5,38[10CAll[6;38H[?25h[?25l[24;53Hk[6;38H[24;53H [5;1H[24;63H4,0-1[5;1H[?25h[?25l[24;53Hk[5;1H[24;53H [4;11H[24;63H3,11 [4;11H[?25h[?25l[24;53Hk[4;11H[24;53H [2;38H[24;63H2,31-38[2;38H[?25h[?25l[24;53Hl[2;38H[24;53H [2;39H[24;66H2-39[2;39H[?25h[?25l[24;53Hl[2;39H[24;53H [2;40H[24;66H3-40[2;40H[?25h[?25l[24;53Hl[2;40H[24;53H [2;41H[24;66H4-41[2;41H[?25h[?25l[24;53Hl[2;41H[24;53H [2;42H[24;66H5-42[2;42H[?25h[?25l[24;53Hl[2;42H[24;53H [2;43H[24;66H6-43[2;43H[?25h[?25l[24;53Hl[2;43H[24;53H [2;44H[24;66H7-44[2;44H[?25h[?25l[24;53Hl[2;44H[24;53H [2;45H[24;66H8-45[2;45H[?25h[?25l[24;53Hl[2;45H[24;53H [2;46H[24;66H9-46[2;46H[?25h[?25l[24;53Hl[2;46H[24;53H [2;47H[24;65H40-47[2;47H[?25h[?25l[24;53Hl[2;47H[24;53H [2;48H[24;66H1-48[2;48H[?25h[?25l[24;53Hl[2;48H[24;53H [2;49H[24;66H2-49[2;49H[?25h[?25l[24;53Hl[2;49H[24;53H [2;50H[24;66H3-50[2;50H[?25h[?25l[24;53Hl[2;50H[24;53H [2;51H[24;66H4-51[2;51H[?25h[?25l[24;53Hl[2;51H[24;53H [2;52H[24;66H5-52[2;52H[?25h[?25l[24;53Hl[2;52H[24;53H [2;53H[24;66H6-53[2;53H[?25h[?25l[24;53Hl[2;53H[24;53H [2;54H[24;66H7-54[2;54H[?25h[?25l[24;53Hl[2;54H[24;53H [2;55H[24;66H8-55[2;55H[?25h[?25l[24;53Hl[2;55H[24;53H [2;56H[24;66H9-56[2;56H[?25h[?25l[24;53Hl[2;56H[24;53H [2;57H[24;65H50-57[2;57H[?25h[?25l[24;53Hl[2;57H[24;53H [2;58H[24;66H1-58[2;58H[?25h[?25l[24;53Hl[2;58H[24;53H [2;59H[24;66H2-59[2;59H[?25h[?25l[24;53Hl[2;59H[24;53H [2;60H[24;66H3-60[2;60H[?25h[?25l[24;53Hl[2;60H[24;53H [2;61H[24;66H4-61[2;61H[?25h[?25l[24;53Hl[2;61H[24;53H [2;62H[24;66H5-62[2;62H[?25h[?25l[24;53Hl[2;62H[24;53H [2;63H[24;66H6-63[2;63H[?25h[?25l[24;53Hl[2;63H[24;53H [2;64H[24;66H7-64[2;64H[?25h[?25l[24;53Hl[2;64H[24;53H [2;65H[24;66H8-65[2;65H[?25h[?25l[24;53Hv[2;65H[24;53H1[2;65H[15C[95mxx[3;1Hh[m[24;1H[1m-- VISUAL --[m[24;53H[K[24;53H1[2;65H[24;63H2,58-65[7CAll[2;65H[?25h[?25l[24;53Hl[2;65H[24;53H2[2;66H[48;5;242mn[m[14C[95mxx[3;1Hh[m[24;66H9-66[2;66H[?25h[?25l[24;53Hl[2;66H[24;53H3[2;67H[48;5;242md[m[13C[95mxx[3;1Hh[m[24;65H60-67[2;67H[?25h[?25l[24;53Hl[2;67H[24;53H4[2;68H[48;5;242me[m[12C[95mxx[3;1Hh[m[24;66H1-68[2;68H[?25h[?25l[24;53Hl[2;68H[24;53H5[2;69H[48;5;242mx[m[11C[95mxx[3;1Hh[m[24;66H2-69[2;69H[?25h[?25l[24;53Hl[2;69H[24;53H6[2;70H[48;5;242m.[m[10C[95mxx[3;1Hh[m[24;66H3-70[2;70H[?25h[?25l[24;53Hl[2;70H[24;53H7[2;71H[48;5;242mp[m[9C[95mxx[3;1Hh[m[24;66H4-71[2;71H[?25h[?25l[24;53Hl[2;71H[24;53H8[2;72H[48;5;242mh[m[8C[95mxx[3;1Hh[m[24;66H5-72[2;72H[?25h[?25l[24;53Hl[2;72H[24;53H9[2;73H[48;5;242mp[m[7C[95mxx[3;1Hh[m[24;66H6-73[2;73H[?25h[?25l[24;53Hl[2;73H[24;53H10[2;74H[48;5;242m [mindex.[95mxx[3;1Hh[m[24;66H7-74[2;74H[?25h[?25l[24;53Hs [2;74H[24;53H [2;65H[24;4H[1mINSERT [m[24;63H[K[24;63H2,58-65[7CAll[2;65Hndex.[95mxhtml[m indexx[3;1H.htm[3;6H[K[2;65H[?25h[24;1H[K[2;64H[?25l[24;53H^[[2;64H[24;53H  [2;65H[24;63H2,57-64[7CAll[2;64H[?25h[?25l[24;53H:[2;64H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l"/etc/apache2/mods-enabled/dir.conf"<tc/apache2/mods-enabled/dir.conf" 5L, 157C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo systemctl restart apachw[Ke2
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo systemctl status apache2
+[?1h=[0;1;32m●[0m apache2.service - The Apache HTTP Server[m
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: [m
+   Active: [0;1;32mactive (running)[0m since Mon 2019-04-22 21:10:20 IST; 11s ago[m
+     Docs: https://httpd.apache.org/docs/2.4/[m
+  Process: 4971 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCE[m
+ Main PID: 4975 (apache2)[m
+    Tasks: 6 (limit: 4456)[m
+   Memory: 10.0M[m
+   CGroup: /system.slice/apache2.service[m
+           ├─4975 /usr/sbin/apache2 -k start[m
+           ├─4976 /usr/sbin/apache2 -k start[m
+           ├─4977 /usr/sbin/apache2 -k start[m
+           ├─4978 /usr/sbin/apache2 -k start[m
+           ├─4979 /usr/sbin/apache2 -k start[m
+           └─4980 /usr/sbin/apache2 -k start[m
+[m
+Apr 22 21:10:20 denied systemd[1]: Starting The Apache HTTP Server...[m
+Apr 22 21:10:20 denied systemd[1]: Started The Apache HTTP Server.[m
+[7mlines 1-18/18 (END)[27m[K[K[?1l>]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ vim index.php^C
+]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ sudo vim index.php
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"index.php" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll"index.php" [New File][1;1H[?25h[?25l[24;53Hi[1;1H[24;53H [1;1H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H0,1[11CAll[1;1H[?25h[?25l[97m[101m<[m[24;63H1,2[1;2H[?25h[?25l[38;5;224m<?[m[24;65H3[1;3H[?25h[?25lp[24;65H4[1;4H[?25h[?25lh[24;65H5[1;5H[?25h[?25l[38;5;224mphp[m[24;65H6[1;6H[?25h[?25l[2;1H[K[24;63H2,1[2;1H[?25h[?25l[24;65H2-9[2;9H[?25h[?25le[24;65H3-10[2;10H[?25h[?25lc[24;65H4-11[2;11H[?25h[?25lh[24;65H5-12[2;12H[?25h[?25l[38;5;81mecho[m[24;65H6-13[2;13H[?25h[?25l[24;65H7-14[2;14H[?25h[?25l[95m"[m[24;65H8-15[2;15H[?25h[?25l[95m [m[24;65H9-16[2;16H[?25h[?25l[2;15H[K[24;65H8-15[2;15H[?25h[?25l[2;14H[K[24;65H7-14[2;14H[?25h[?25ld[24;65H8-15[2;15H[?25h[?25la[24;65H9-16[2;16H[?25h[?25lt[24;65H10-17[2;17H[?25h[?25l[1m[96mdate[m[24;66H1-18[2;18H[?25h[?25l[38;5;224m([m[24;66H2-19[2;19H[?25h[?25l[95m"[m[24;66H3-20[2;20H[?25h[?25l[24;66H0-17[2;17H[?25h[?25ldatle[38;5;224m([m[95m"[m[24;66H1-18[2;18H[?25h[?25lle[38;5;224m([m[95m"[m[24;66H2-19[2;19H[?25h[?25lle[38;5;224m([m[95m"[m[24;66H3-20[2;20H[?25h[?25le[38;5;224m([m[95m"[m[2;22H[K[24;66H2-19[2;19H[?25h[?25le[38;5;224m([m[95m"[m[2;21H[K[24;66H1-18[2;18H[?25h[?25l[1m[96mdate[m[38;5;224m([m[95m"[m[2;20H[K[24;66H0-17[2;17H[?25h[24;1H[K[2;16H[?25l[24;53H^[[2;16H[24;53H  [2;17H[24;63H2,9-16[8CAll[2;16H[?25h[?25l[24;53Hl[2;16H[24;53H [2;17H[24;65H10-17[2;17H[?25h[?25l[24;53Hl[2;17H[24;53H [2;18H[24;66H1-18[2;18H[?25h[?25l[24;53Hl[2;18H[24;53H [2;19H[24;66H2-19[2;19H[?25h[?25l[24;53Ha[2;19H[24;53H [2;20H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H2,13-20[7CAll[2;20H[?25h[?25l[95mY[m[24;66H4-21[2;21H[?25h[?25l[95m/[m[24;66H5-22[2;22H[?25h[?25l[95mm[m[24;66H6-23[2;23H[?25h[?25l[95m/[m[24;66H7-24[2;24H[?25h[?25l[95md[m[24;66H8-25[2;25H[?25h[?25l[95m"[m[24;66H9-26[2;26H[?25h[?25l[38;5;224m)[m[2;18H[38;5;224m[46m([7C)[m[24;65H20-27[2;27H[?25h[24;1H[K[2;26H[?25l[24;53H^[[2;26H[24;53H  [2;27H[24;63H2,19-26[7CAll[2;26H[?25h[?25l[24;53Hh[2;26H[24;53H [2;25H[2;18H[38;5;224m([7C)[m[24;66H8-25[2;25H[?25h[?25l[24;53Hh[2;25H[24;53H [2;24H[24;66H7-24[2;24H[?25h[?25l[24;53Hh[2;24H[24;53H [2;23H[24;66H6-23[2;23H[?25h[?25l[24;53Hh[2;23H[24;53H [2;22H[24;66H5-22[2;22H[?25h[?25l[24;53Hh[2;22H[24;53H [2;21H[24;66H4-21[2;21H[?25h[?25l[24;53Hh[2;21H[24;53H [2;20H[24;66H3-20[2;20H[?25h[?25l[24;53Hh[2;20H[24;53H [2;19H[24;66H2-19[2;19H[?25h[?25l[24;53Hh[2;19H[24;53H [2;18H[38;5;224m[46m([7C)[m[24;66H1-18[2;18H[?25h[?25l[24;53Hh[2;18H[24;53H [2;17H[1C[38;5;224m([7C)[m[24;66H0-17[2;17H[?25h[?25l[24;53Hh[2;17H[24;53H [2;16H[24;65H9-16 [2;16H[?25h[?25l[24;53Hh[2;16H[24;53H [2;15H[24;65H8-15[2;15H[?25h[?25l[24;53Hh[2;15H[24;53H [2;14H[24;65H7-14[2;14H[?25h[?25l[24;53Hh[2;14H[24;53H [2;13H[24;65H6-13[2;13H[?25h[?25l[24;53Hh[2;13H[24;53H [2;12H[24;65H5-12[2;12H[?25h[?25l[24;53Hl[2;12H[24;53H [2;13H[24;65H6-13[2;13H[?25h[?25l[24;53Hl[2;13H[24;53H [2;14H[24;65H7-14[2;14H[?25h[?25l[24;53Hi[2;14H[24;53H [2;14H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H2,7-14[8CAll[2;14H[?25h[?25l[95m"date("[mY[93m/[mm[93m/[md[95m")[m[24;65H8-15[2;15H[?25h[?25l[95mTdate("[mY[93m/[mm[93m/[md[95m")[m[24;65H9-16[2;16H[?25h[?25l[95mOdate("[mY[93m/[mm[93m/[md[95m")[m[24;65H10-17[2;17H[?25h[?25l[1C[95mdate("[mY[93m/[mm[93m/[md[95m")[m[24;66H1-18[2;18H[?25h[?25l[95madate("[mY[93m/[mm[93m/[md[95m")[m[24;66H2-19[2;19H[?25h[?25l[95m date("[mY[93m/[mm[93m/[md[95m")[m[24;66H3-20[2;20H[?25h[?25l[95mdate("[mY[93m/[mm[93m/[md[95m")[m[2;32H[K[24;66H2-19[2;19H[?25h[?25l[95mdate("[mY[93m/[mm[93m/[md[95m")[m[2;31H[K[24;66H1-18[2;18H[?25h[?25l[95mate("[mY[93m/[mm[93m/[md[95m")[m[2;30H[K[24;66H0-17[2;17H[?25h[?25l[95mdate("[mY[93m/[mm[93m/[md[95m")[m[2;29H[K[24;65H9-16 [2;16H[?25h[?25l[95modate("[mY[93m/[mm[93m/[md[95m")[m[24;65H10-17[2;17H[?25h[?25l[1C[95mdate("[mY[93m/[mm[93m/[md[95m")[m[24;66H1-18[2;18H[?25h[?25l[95madate("[mY[93m/[mm[93m/[md[95m")[m[24;66H2-19[2;19H[?25h[?25l[95mydate("[mY[93m/[mm[93m/[md[95m")[m[24;66H3-20[2;20H[?25h[?25l[95m date("[mY[93m/[mm[93m/[md[95m")[m[24;66H4-21[2;21H[?25h[?25l[95midate("[mY[93m/[mm[93m/[md[95m")[m[24;66H5-22[2;22H[?25h[?25l[95msdate("[mY[93m/[mm[93m/[md[95m")[m[24;66H6-23[2;23H[?25h[?25l[95m date("[mY[93m/[mm[93m/[md[95m")[m[24;66H7-24[2;24H[?25h[?25l[95m"[m[1m[96mdate[m[38;5;224m([m[95m"Y/m/d"[m[38;5;224m)[m[24;66H8-25[2;25H[?25h[?25l [1m[96mdate[m[38;5;224m([m[95m"Y/m/d"[m[38;5;224m)[m[24;66H9-26[2;26H[?25h[?25l[93m.[m[1m[96mdate[m[38;5;224m([m[95m"Y/m/d"[m[38;5;224m)[m[24;65H20-27[2;27H[?25h[?25l [1m[96mdate[m[38;5;224m([m[95m"Y/m/d"[m[38;5;224m)[m[24;66H1-28[2;28H[?25h[24;1H[K[2;27H[?25l[24;53H^[[2;27H[24;53H  [2;28H[24;63H2,20-27[7CAll[2;27H[?25h[?25l[24;53H$[2;27H[24;53H [2;40H[2;32H[38;5;224m[46m([7C)[m[24;65H33-40[2;40H[?25h[?25l[24;53Ha[2;40H[24;53H [2;41H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H2,34-41[7CAll[2;41H[?25h[?25l;[2;32H[38;5;224m([7C)[m[24;66H5-42[2;42H[?25h[?25l[38;5;81mecho[m [95m"Today is "[m [93m.[m [1m[96mdate[m[38;5;224m([m[95m"Y/m/d"[m[38;5;224m)[m;[2;34H[K[3;1H[K[24;63H3,1    [3;1H[?25h[?25l[93m?[m[24;65H2[3;2H[?25h[?25l[38;5;224m?>[m[1;1H[38;5;224m[46m<[3;2H>[m[24;65H3[3;3H[?25h[24;1H[K[3;2H[?25l[24;53H^[[3;2H[24;53H  [3;3H[24;63H3,2[11CAll[3;2H[?25h[?25l[24;53H:[3;2H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l"index.php" [New] 3L, 43C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;nikhil@denied: /var/www/html[01;31mnikhil@denied[00m:[01;34m/var/www/html[00m$ exit
+exit
+
+Script done on 2019-04-22 21:13:34+05:30 [COMMAND_EXIT_CODE="0"]

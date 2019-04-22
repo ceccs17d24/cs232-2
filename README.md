@@ -10,6 +10,6 @@
 ##### Further Tasks
    - [x] Package Management
    - [x] Perl
-   - [ ] LAMP
+   - [x] LAMP
    - [ ] Kernel Compilation
  - [x] Create own server
