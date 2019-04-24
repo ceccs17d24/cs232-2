@@ -1,0 +1,236 @@
+Script started on 2019-04-24 17:35:06+05:30 [TERM="xterm-termite" TTY="/dev/pts/0" COLUMNS="194" LINES="46"]
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m if [Kconfig
+[?1l>enp3s0f1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a8:1e:84:55:02:f9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 823  bytes 16533028 (15.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 16533028 (15.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39746  bytes 30278849 (28.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31221  bytes 5531580 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo if c[K[Kconfig enp3s0f1 down
+[?1l>[sudo] password for nikhil: 
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m ifconfig
+[?1l>lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 823  bytes 16533028 (15.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 16533028 (15.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.205  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 fe80::db90:91f6:b446:daf6  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:204:d286:a7e0:84d8:d37b:8457:bcf1  prefixlen 64  scopeid 0x0<global>
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39783  bytes 30287593 (28.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31254  bytes 5536988 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig ep[Knp3s0f1 up
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m ifconfig
+[?1l>enp3s0f1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a8:1e:84:55:02:f9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 823  bytes 16533028 (15.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 16533028 (15.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.205  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 fe80::db90:91f6:b446:daf6  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:204:d286:a7e0:84d8:d37b:8457:bcf1  prefixlen 64  scopeid 0x0<global>
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39820  bytes 30297497 (28.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31290  bytes 5543046 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m ifconfig enp3s0f1 192.17[K68[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kwlp2s0 down[1@s[1@u[1@d[1@o[1@ 
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig wlp2s0 up
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig
+[?1l>enp3s0f1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a8:1e:84:55:02:f9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 823  bytes 16533028 (15.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 16533028 (15.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39842  bytes 30302154 (28.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31313  bytes 5546550 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m if[K[Ksudo ifconfig wlp2s0 192.168.1.22
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig
+[?1l>enp3s0f1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a8:1e:84:55:02:f9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 823  bytes 16533028 (15.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 16533028 (15.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.1.22  netmask 255.255.255.0  broadcast 192.168.1.255
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39842  bytes 30302154 (28.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31313  bytes 5546550 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig l[Kwlp2s0 b[K-bor[K[Kroadcast 192.18[K68.1.1[K254
+[?1l>Warning: Interface wlp2s0 still in BROADCAST mode.
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig wlp2s0
+[?1l>wlp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.1.254  netmask 255.255.255.0  broadcast 192.168.1.255
+        ether 3c:a0:67:80:ef:8f  txqueuelen 1000  (Ethernet)
+        RX packets 39866  bytes 30307001 (28.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31327  bytes 5548521 (5.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifconfig wlp2s0 -broadcast
+[?1l>Warning: Interface wlp2s0 still in BROADCAST mode.
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo ifcongi[K[Kfig set wp[Klp2s0[K[K[K[K[K[K[K[K[K[Kwlp2s0 -[Kdown
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m cd /etc/r[K^C[?1l>[?1h=[?1l>
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[31m130[30m]
+└╼(B[m cat a/[K[K/etc/resolv.conf
+[?1l># Generated by resolvconf
+nameserver 192.168.43.1
+nameserver 2405:204:d286:a7e0::48
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo vim /et/[Kc/resolv.conf
+[?1l>[?1000h[?2004h[?1049h[?1h=[?2004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"/etc/resolv.conf" 3L, 84C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Generated by resolvconf[m
+[36mnameserver[m [31m192.168.43.1[m
+[36mnameserver[m [97m[101m2405:204:d286:a7e0::48[m
+[94m~                                                                                                                                                                                                 [5;1H~                                                                                                                                                                                                 [6;1H~                                                                                                                                                                                                 [7;1H~                                                                                                                                                                                                 [8;1H~                                                                                                                                                                                                 [9;1H~                                                                                                                                                                                                 [10;1H~                                                                                                                                                                                                 [11;1H~                                                                                                                                                                                                 [12;1H~                                                                                                                                                                                                 [13;1H~                                                                                                                                                                                                 [14;1H~                                                                                                                                                                                                 [15;1H~                                                                                                                                                                                                 [16;1H~                                                                                                                                                                                                 [17;1H~                                                                                                                                                                                                 [18;1H~                                                                                                                                                                                                 [19;1H~                                                                                                                                                                                                 [20;1H~                                                                                                                                                                                                 [21;1H~                                                                                                                                                                                                 [22;1H~                                                                                                                                                                                                 [23;1H~                                                                                                                                                                                                 [24;1H~                                                                                                                                                                                                 [25;1H~                                                                                                                                                                                                 [26;1H~                                                                                                                                                                                                 [27;1H~                                                                                                                                                                                                 [28;1H~                                                                                                                                                                                                 [29;1H~                                                                                                                                                                                                 [30;1H~                                                                                                                                                                                                 [31;1H~                                                                                                                                                                                                 [32;1H~                                                                                                                                                                                                 [33;1H~                                                                                                                                                                                                 [34;1H~                                                                                                                                                                                                 [35;1H~                                                                                                                                                                                                 [36;1H~                                                                                                                                                                                                 [37;1H~                                                                                                                                                                                                 [38;1H~                                                                                                                                                                                                 [39;1H~                                                                                                                                                                                                 [40;1H~                                                                                                                                                                                                 [41;1H~                                                                                                                                                                                                 [42;1H~                                                                                                                                                                                                 [43;1H~                                                                                                                                                                                                 [44;1H~                                                                                                                                                                                                 [45;1H~                                                                                                                                                                                                 [m[46;177H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[96m# Generated by resolvconf[m
+[1m[96mnameserver[m [95m192.168.43.1[m
+[1m[96mnameserver[m [97m[101m2405:204:d286:a7e0::48[m
+[94m~                                                                                                                                                                                                 [5;1H~                                                                                                                                                                                                 [6;1H~                                                                                                                                                                                                 [7;1H~                                                                                                                                                                                                 [8;1H~                                                                                                                                                                                                 [9;1H~                                                                                                                                                                                                 [10;1H~                                                                                                                                                                                                 [11;1H~                                                                                                                                                                                                 [12;1H~                                                                                                                                                                                                 [13;1H~                                                                                                                                                                                                 [14;1H~                                                                                                                                                                                                 [15;1H~                                                                                                                                                                                                 [16;1H~                                                                                                                                                                                                 [17;1H~                                                                                                                                                                                                 [18;1H~                                                                                                                                                                                                 [19;1H~                                                                                                                                                                                                 [20;1H~                                                                                                                                                                                                 [21;1H~                                                                                                                                                                                                 [22;1H~                                                                                                                                                                                                 [23;1H~                                                                                                                                                                                                 [24;1H~                                                                                                                                                                                                 [25;1H~                                                                                                                                                                                                 [26;1H~                                                                                                                                                                                                 [27;1H~                                                                                                                                                                                                 [28;1H~                                                                                                                                                                                                 [29;1H~                                                                                                                                                                                                 [30;1H~                                                                                                                                                                                                 [31;1H~                                                                                                                                                                                                 [32;1H~                                                                                                                                                                                                 [33;1H~                                                                                                                                                                                                 [34;1H~                                                                                                                                                                                                 [35;1H~                                                                                                                                                                                                 [36;1H~                                                                                                                                                                                                 [37;1H~                                                                                                                                                                                                 [38;1H~                                                                                                                                                                                                 [39;1H~                                                                                                                                                                                                 [40;1H~                                                                                                                                                                                                 [41;1H~                                                                                                                                                                                                 [42;1H~                                                                                                                                                                                                 [43;1H~                                                                                                                                                                                                 [44;1H~                                                                                                                                                                                                 [45;1H~                                                                                                                                                                                                 [m[46;177H1,1[11CAll"/etc/resolv.conf" 3L, 84C[1;1H[?25h[?25l[46;167Hj[1;1H[46;167H [2;1H[46;177H2[2;1H[?25h[?25l[46;167Hj[2;1H[46;167H [3;1H[46;177H3[3;1H[?25h[?25l[46;167Ho[3;1H[46;167H [4;1H[46;1H[1m-- INSERT --[m[46;13H[K[46;177H4,1[11CAll[4;1H[K[4;1H[?25h[?25l[5;1H[K[46;177H5[5;1H[?25h[?25l[97m[101mn[m[46;179H2[5;2H[?25h[?25l[97m[101ma[m[46;179H3[5;3H[?25h[?25l[97m[101mm[m[46;179H4[5;4H[?25h[?25l[97m[101me[m[46;179H5[5;5H[?25h[?25l[97m[101ms[m[46;179H6[5;6H[?25h[?25l[97m[101me[m[46;179H7[5;7H[?25h[?25l[97m[101mr[m[46;179H8[5;8H[?25h[?25l[97m[101mv[m[46;179H9[5;9H[?25h[?25l[97m[101me[m[46;179H10[5;10H[?25h[?25l[1m[96mnameserver[m[46;180H1[5;11H[?25h[?25l[46;180H2[5;12H[?25h[?25l[97m[101m8[m[46;180H3[5;13H[?25h[?25l[97m[101m.[m[46;180H4[5;14H[?25h[?25l[97m[101m8[m[46;180H5[5;15H[?25h[?25l[97m[101m.[m[46;180H6[5;16H[?25h[?25l[97m[101m8[m[46;180H7[5;17H[?25h[?25l[97m[101m.[m[46;180H8[5;18H[?25h[?25l[95m8.8.8.8[m[46;180H9[5;19H[?25h[?25l[6;1H[K[46;177H6,1 [6;1H[?25h[?25l[97m[101mn[m[46;179H2[6;2H[?25h[?25l[97m[101ma[m[46;179H3[6;3H[?25h[?25l[97m[101mm[m[46;179H4[6;4H[?25h[?25l[97m[101me[m[46;179H5[6;5H[?25h[?25l[97m[101ms[m[46;179H6[6;6H[?25h[?25l[97m[101me[m[46;179H7[6;7H[?25h[?25l[97m[101mr[m[46;179H8[6;8H[?25h[?25l[97m[101mv[m[46;179H9[6;9H[?25h[?25l[97m[101me[m[46;179H10[6;10H[?25h[?25l[1m[96mnameserver[m[46;180H1[6;11H[?25h[?25l[46;180H2[6;12H[?25h[?25l[97m[101m8[m[46;180H3[6;13H[?25h[?25l[97m[101m.[m[46;180H4[6;14H[?25h[?25l[97m[101m8[m[46;180H5[6;15H[?25h[?25l[97m[101m.[m[46;180H6[6;16H[?25h[?25l[97m[101m4[m[46;180H7[6;17H[?25h[?25l[97m[101m.[m[46;180H8[6;18H[?25h[?25l[95m8.8.4.4[m[46;180H9[6;19H[?25h[46;1H[K[6;18H[?25l[46;167H^[[6;18H[46;167H  [6;19H[46;177H6,18[10CAll[6;18H[?25h[?25l[46;167Hk[6;18H[46;167H [5;18H[46;177H5[5;18H[?25h[?25l[46;167Hk[5;18H[46;167H [4;1H[46;177H4,0-1[4;1H[?25h[?25l[46;167Ho[4;1H[46;167H [5;1H[46;1H[1m-- INSERT --[m[46;177H[K[46;177H5,1[11CTop[5;45r[5;1H[L[1;46r[46;177H[K[46;177H5,1[11CAll[5;1H[?25h[?25l[97m[101m [m[46;179H2[5;2H[?25h[?25l[5;1H[K[46;179H1[5;1H[?25h[?25l[96m#[m[46;179H2[5;2H[?25h[?25l[96m [m[46;179H3[5;3H[?25h[?25l[96mO[m[46;179H4[5;4H[?25h[?25l[5;3H[K[46;179H3[5;3H[?25h[?25l[96mG[m[46;179H4[5;4H[?25h[?25l[96mo[m[46;179H5[5;5H[?25h[?25l[96mo[m[46;179H6[5;6H[?25h[?25l[96mg[m[46;179H7[5;7H[?25h[?25l[96ml[m[46;179H8[5;8H[?25h[?25l[96me[m[46;179H9[5;9H[?25h[?25l[96mD[m[46;179H10[5;10H[?25h[?25l[96mN[m[46;180H1[5;11H[?25h[?25l[96mS[m[46;180H2[5;12H[?25h[46;1H[K[5;11H[?25l[46;167H^[[5;11H[46;167H  [5;12H[46;177H5,11[10CAll[5;11H[?25h[?25l[46;167H:[5;11H[46;167H[K[46;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l"/etc/resolv.conf" 7L, 135C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m cat /etc/resolv.conf
+[?1l># Generated by resolvconf
+nameserver 192.168.43.1
+nameserver 2405:204:d286:a7e0::48
+
+# GoogleDNS
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m route
+[?1l>Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         _gateway        0.0.0.0         UG    303    0        0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U     303    0        0 wlp2s0
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m route pring[Kt
+[?1l>Usage: route [-nNvee] [-FC] [<AF>]           List kernel routing tables
+       route [-v] [-FC] {add|del|flush} ...  Modify routing table for AF.
+
+       route {-h|--help} [<AF>]              Detailed usage syntax for specified AF.
+       route {-V|--version}                  Display version/author and exit.
+
+        -v, --verbose            be verbose
+        -n, --numeric            don't resolve names
+        -e, --extend             display other/more information
+        -F, --fib                display Forwarding Information Base (default)
+        -C, --cache              display routing cache instead of FIB
+
+  <AF>=Use -4, -6, '-A <af>' or '--<af>'; default: inet
+  List of possible address families (which support routing):
+    inet (DARPA Internet) inet6 (IPv6) ax25 (AMPR AX.25) 
+    netrom (AMPR NET/ROM) ipx (Novell IPX) ddp (Appletalk DDP) 
+    x25 (CCITT X.25) 
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[31m3[30m]
+└╼(B[m route -n
+[?1l>Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.43.1    0.0.0.0         UG    303    0        0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U     303    0        0 wlp2s0
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m route add default gw 192.168.43.1
+[?1l>SIOCADDRT: Operation not permitted
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[31m7[30m]
+└╼(B[m sudo route add default gw 192.168.3[K43.1
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m route -n
+[?1l>Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.43.1    0.0.0.0         UG    0      0        0 wlp2s0
+0.0.0.0         192.168.43.1    0.0.0.0         UG    303    0        0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U     303    0        0 wlp2s0
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m sudo route del -net 0.0.0.0 gw 192.168.3[K43.1 metric 0
+[?1l>[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m route -n
+[?1l>Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.43.1    0.0.0.0         UG    303    0        0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U     303    0        0 wlp2s0
+[?1h=[1m[30m┌╼[[34mnikhil[30m@[34macer[30m]╾╼[[34m~[30m]╾╼[[34m0[30m]
+└╼(B[m exit
+[?1l>exit
+
+Script done on 2019-04-24 17:50:58+05:30 [COMMAND_EXIT_CODE="0"]
