@@ -114,8 +114,8 @@ int main(int argc, char **args) {
 		//gpa = computeCGPA(buf);
 		//printf("%s", buf);
 		getRegNo(buf, regNo);
-		getName(buf, name);
+		//getName(buf, name);
 		gpa = computeGPA(buf);
-		printf("%s|%s|%.2f\n", regNo, name, gpa);
+		printf("%s| %.2f\n", regNo, name, gpa);
 	}
 }
