@@ -13,7 +13,7 @@ pwd
 cat > aa.txt
 cat aa.txt > bb.txt
 paste aa.txt bb.txt 
-grep "nikhil" aa.txt 
+grep "greshma" aa.txt 
 cd Desktop/
 cp a.txt ../bb.txt .
 rm bb.txt 
