@@ -3,3 +3,4 @@
 sudo apt install vsftpd
 sudo vsftpd
 ftp localhost
+sudo apt get install
