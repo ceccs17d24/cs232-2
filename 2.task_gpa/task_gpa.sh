@@ -26,7 +26,7 @@ cd ..
 ###### S2 ######
 if [[ ! -d "s2" ]]
 then
-	mkdir s2
+ mkdir s2
 fi
 cd s2
 curl -fLo "result.pdf" "https://ktu.edu.in/eu/att/attachments.htm?download=file&id=M0BUnlNAAnhrVifaH56UXPBWJkDw2vvqDcL9YR03Q0s%3D" > /dev/null
